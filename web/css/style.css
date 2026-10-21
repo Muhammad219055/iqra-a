@@ -1,0 +1,330 @@
+/* Quran Recitation Tutor Styling */
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-card: #1c2128;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --accent-gold: #e5b95f;
+    --accent-teal: #2ea043;
+    --color-mistake: #f85149;
+    --color-prompt: #388bfd;
+    --border-color: #30363d;
+    --font-arabic: 'Amiri Quran', serif;
+    --font-ui: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-ui);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    letter-spacing: -0.02em;
+}
+
+.brand .badge {
+    background: rgba(229, 185, 95, 0.15);
+    color: var(--accent-gold);
+    border: 1px solid rgba(229, 185, 95, 0.3);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.controls-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-group label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+select, input[type="number"] {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+select:focus, input:focus {
+    border-color: var(--accent-gold);
+}
+
+.btn-primary {
+    background: var(--accent-gold);
+    color: #0d1117;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+    background: #d4a74e;
+    transform: translateY(-1px);
+}
+
+.btn-primary.recording {
+    background: var(--color-mistake);
+    color: #fff;
+    animation: pulse-red 1.8s infinite;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(248, 81, 73, 0.5); }
+    70% { box-shadow: 0 0 0 10px rgba(248, 81, 73, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(248, 81, 73, 0); }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+/* Status Banner */
+.status-banner {
+    width: 100%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--text-secondary);
+}
+
+.status-dot.active {
+    background: var(--accent-teal);
+    box-shadow: 0 0 8px var(--accent-teal);
+}
+
+.status-dot.prompting {
+    background: var(--color-prompt);
+    box-shadow: 0 0 8px var(--color-prompt);
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.3; }
+}
+
+.prompt-banner {
+    display: none;
+    background: rgba(56, 139, 253, 0.15);
+    border: 1px solid rgba(56, 139, 253, 0.4);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #79c0ff;
+    font-weight: 500;
+}
+
+.prompt-banner.show {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Mushaf Page View */
+.mushaf-card {
+    width: 100%;
+    background: #14171d;
+    border: 2px solid #2a303c;
+    border-radius: 16px;
+    padding: 40px 32px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.mushaf-header {
+    text-align: center;
+    border-bottom: 1px solid #242933;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.mushaf-header h2 {
+    font-family: var(--font-arabic);
+    color: var(--accent-gold);
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.surah-info {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+.mushaf-body {
+    direction: rtl;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 2.8;
+}
+
+.quran-ayah {
+    display: inline;
+}
+
+.quran-word {
+    font-family: var(--font-arabic);
+    font-size: 2.1rem;
+    padding: 4px 6px;
+    margin: 0 1px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    color: #f0f6fc;
+}
+
+.quran-word:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.quran-word.word-matched {
+    background: rgba(46, 160, 67, 0.18);
+    color: #7ee787;
+}
+
+.quran-word.word-active {
+    background: rgba(229, 185, 95, 0.25);
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.quran-word.word-mistake {
+    background: rgba(248, 81, 73, 0.25);
+    color: #ffa198;
+    border-bottom: 2px solid var(--color-mistake);
+}
+
+.quran-word.word-prompted {
+    background: rgba(56, 139, 253, 0.3);
+    color: #a5d6ff;
+    box-shadow: 0 0 12px rgba(56, 139, 253, 0.4);
+}
+
+.quran-word.word-hidden {
+    filter: blur(8px);
+    opacity: 0.2;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.quran-word.word-hidden:hover {
+    filter: blur(4px);
+    opacity: 0.5;
+}
+
+.ayah-end-marker {
+    font-family: var(--font-arabic);
+    font-size: 1.8rem;
+    color: var(--accent-gold);
+    margin: 0 8px;
+    display: inline-block;
+    user-select: none;
+}
+
+/* Session Mistake Summary Drawer */
+.session-stats {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item .stat-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+}
+
+.stat-item .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+}

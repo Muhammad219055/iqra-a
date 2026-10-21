@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Recitation & Memorization Tutor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1>Quran Tutor</h1>
+            <span class="badge">Local AI</span>
+        </div>
+
+        <div class="controls-bar">
+            <div class="control-group">
+                <label for="select-surah">Surah:</label>
+                <select id="select-surah">
+                    <option value="1" selected>1. Al-Fatihah (الفاتحة)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="select-qari">Teacher Qari:</label>
+                <select id="select-qari">
+                    <option value="mishari" selected>Mishari Rashid</option>
+                    <option value="husary">Mahmoud Al-Husary</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="select-mode">Feedback Mode:</label>
+                <select id="select-mode">
+                    <option value="prompt" selected>Teacher Voice Prompt</option>
+                    <option value="buzzer">Buzzer Alert</option>
+                    <option value="silent">Silent Highlight</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="prompt-words">Prompt Words:</label>
+                <input type="number" id="prompt-words" min="1" max="5" value="3" style="width: 50px;">
+            </div>
+
+            <div class="control-group">
+                <label for="toggle-memorize">Memorize:</label>
+                <input type="checkbox" id="toggle-memorize" style="cursor: pointer;">
+            </div>
+
+            <button id="btn-record" class="btn-primary">
+                <span id="btn-icon">🎙️</span>
+                <span id="btn-text">Start Reciting</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Status & Live Feedback -->
+        <div class="status-banner">
+            <div class="status-indicator">
+                <div id="status-dot" class="status-dot"></div>
+                <span id="status-text">Ready to recite. Press Start.</span>
+            </div>
+
+            <div id="prompt-banner" class="prompt-banner">
+                <span>🔊 Teacher Prompting...</span>
+            </div>
+
+            <div id="mic-status" style="color: var(--text-secondary); font-size: 0.85rem;">
+                Mic: Idle
+            </div>
+        </div>
+
+        <!-- Mushaf Classical Display Card -->
+        <div class="mushaf-card">
+            <div class="mushaf-header">
+                <h2 id="mushaf-title">سُورَةُ الْفَاتِحَةِ</h2>
+                <div class="surah-info">Meccan • 7 Verses • 29 Words</div>
+            </div>
+
+            <div id="mushaf-body" class="mushaf-body">
+                <!-- Dynamically populated Quranic words -->
+                <div style="text-align: center; color: var(--text-secondary);">Loading Quran text...</div>
+            </div>
+        </div>
+
+        <!-- Session Statistics -->
+        <div class="session-stats">
+            <div class="stat-item">
+                <div id="stat-matched" class="stat-value">0</div>
+                <div class="stat-label">Words Matched</div>
+            </div>
+            <div class="stat-item">
+                <div id="stat-mistakes" class="stat-value" style="color: var(--color-mistake);">0</div>
+                <div class="stat-label">Mistakes</div>
+            </div>
+            <div class="stat-item">
+                <div id="stat-prompts" class="stat-value" style="color: var(--color-prompt);">0</div>
+                <div class="stat-label">Teacher Prompts</div>
+            </div>
+            <div class="stat-item">
+                <div id="stat-peeks" class="stat-value">0</div>
+                <div class="stat-label">Words Peeked</div>
+            </div>
+        </div>
+
+        <!-- Session History (Milestone 4 SQLite) -->
+        <div class="session-history-card" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+            <h3 style="font-size: 1rem; color: var(--accent-gold); margin-bottom: 12px;">Recent Practice Sessions (Local SQLite)</h3>
+            <div id="history-list" style="font-size: 0.85rem; color: var(--text-secondary);">
+                No previous sessions logged yet. Complete a recitation to record history.
+            </div>
+        </div>
+    </main>
+
+    <!-- Hidden audio element for prompt playback -->
+    <audio id="prompt-audio-player" preload="auto"></audio>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

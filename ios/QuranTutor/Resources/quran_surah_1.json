@@ -1,0 +1,587 @@
+{
+  "surah": 1,
+  "total_ayahs": 7,
+  "total_words": 29,
+  "ayahs": [
+    {
+      "surah": 1,
+      "ayah": 1,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 1,
+          "word_index_in_ayah": 1,
+          "word_index_global": 1,
+          "text_uthmani": "بِسْمِ",
+          "text_imlaei": "بِسْمِ",
+          "normalized": "بسم"
+        },
+        {
+          "surah": 1,
+          "ayah": 1,
+          "word_index_in_ayah": 2,
+          "word_index_global": 2,
+          "text_uthmani": "ٱللَّهِ",
+          "text_imlaei": "اللَّهِ",
+          "normalized": "الله"
+        },
+        {
+          "surah": 1,
+          "ayah": 1,
+          "word_index_in_ayah": 3,
+          "word_index_global": 3,
+          "text_uthmani": "ٱلرَّحْمَـٰنِ",
+          "text_imlaei": "الرَّحْمَٰنِ",
+          "normalized": "الرحمن"
+        },
+        {
+          "surah": 1,
+          "ayah": 1,
+          "word_index_in_ayah": 4,
+          "word_index_global": 4,
+          "text_uthmani": "ٱلرَّحِيمِ",
+          "text_imlaei": "الرَّحِيمِ",
+          "normalized": "الرحيم"
+        }
+      ],
+      "full_uthmani": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "full_normalized": "بسم الله الرحمن الرحيم"
+    },
+    {
+      "surah": 1,
+      "ayah": 2,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 2,
+          "word_index_in_ayah": 1,
+          "word_index_global": 5,
+          "text_uthmani": "ٱلْحَمْدُ",
+          "text_imlaei": "الْحَمْدُ",
+          "normalized": "الحمد"
+        },
+        {
+          "surah": 1,
+          "ayah": 2,
+          "word_index_in_ayah": 2,
+          "word_index_global": 6,
+          "text_uthmani": "لِلَّهِ",
+          "text_imlaei": "لِلَّهِ",
+          "normalized": "لله"
+        },
+        {
+          "surah": 1,
+          "ayah": 2,
+          "word_index_in_ayah": 3,
+          "word_index_global": 7,
+          "text_uthmani": "رَبِّ",
+          "text_imlaei": "رَبِّ",
+          "normalized": "رب"
+        },
+        {
+          "surah": 1,
+          "ayah": 2,
+          "word_index_in_ayah": 4,
+          "word_index_global": 8,
+          "text_uthmani": "ٱلْعَـٰلَمِينَ",
+          "text_imlaei": "الْعَالَمِينَ",
+          "normalized": "العلمين"
+        }
+      ],
+      "full_uthmani": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+      "full_normalized": "الحمد لله رب العلمين"
+    },
+    {
+      "surah": 1,
+      "ayah": 3,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 3,
+          "word_index_in_ayah": 1,
+          "word_index_global": 9,
+          "text_uthmani": "ٱلرَّحْمَـٰنِ",
+          "text_imlaei": "الرَّحْمَٰنِ",
+          "normalized": "الرحمن"
+        },
+        {
+          "surah": 1,
+          "ayah": 3,
+          "word_index_in_ayah": 2,
+          "word_index_global": 10,
+          "text_uthmani": "ٱلرَّحِيمِ",
+          "text_imlaei": "الرَّحِيمِ",
+          "normalized": "الرحيم"
+        }
+      ],
+      "full_uthmani": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "full_normalized": "الرحمن الرحيم"
+    },
+    {
+      "surah": 1,
+      "ayah": 4,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 4,
+          "word_index_in_ayah": 1,
+          "word_index_global": 11,
+          "text_uthmani": "مَـٰلِكِ",
+          "text_imlaei": "مَالِكِ",
+          "normalized": "ملك"
+        },
+        {
+          "surah": 1,
+          "ayah": 4,
+          "word_index_in_ayah": 2,
+          "word_index_global": 12,
+          "text_uthmani": "يَوْمِ",
+          "text_imlaei": "يَوْمِ",
+          "normalized": "يوم"
+        },
+        {
+          "surah": 1,
+          "ayah": 4,
+          "word_index_in_ayah": 3,
+          "word_index_global": 13,
+          "text_uthmani": "ٱلدِّينِ",
+          "text_imlaei": "الدِّينِ",
+          "normalized": "الدين"
+        }
+      ],
+      "full_uthmani": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+      "full_normalized": "ملك يوم الدين"
+    },
+    {
+      "surah": 1,
+      "ayah": 5,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 5,
+          "word_index_in_ayah": 1,
+          "word_index_global": 14,
+          "text_uthmani": "إِيَّاكَ",
+          "text_imlaei": "إِيَّاكَ",
+          "normalized": "اياك"
+        },
+        {
+          "surah": 1,
+          "ayah": 5,
+          "word_index_in_ayah": 2,
+          "word_index_global": 15,
+          "text_uthmani": "نَعْبُدُ",
+          "text_imlaei": "نَعْبُدُ",
+          "normalized": "نعبد"
+        },
+        {
+          "surah": 1,
+          "ayah": 5,
+          "word_index_in_ayah": 3,
+          "word_index_global": 16,
+          "text_uthmani": "وَإِيَّاكَ",
+          "text_imlaei": "وَإِيَّاكَ",
+          "normalized": "واياك"
+        },
+        {
+          "surah": 1,
+          "ayah": 5,
+          "word_index_in_ayah": 4,
+          "word_index_global": 17,
+          "text_uthmani": "نَسْتَعِينُ",
+          "text_imlaei": "نَسْتَعِينُ",
+          "normalized": "نستعين"
+        }
+      ],
+      "full_uthmani": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "full_normalized": "اياك نعبد واياك نستعين"
+    },
+    {
+      "surah": 1,
+      "ayah": 6,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 6,
+          "word_index_in_ayah": 1,
+          "word_index_global": 18,
+          "text_uthmani": "ٱهْدِنَا",
+          "text_imlaei": "اهْدِنَا",
+          "normalized": "اهدنا"
+        },
+        {
+          "surah": 1,
+          "ayah": 6,
+          "word_index_in_ayah": 2,
+          "word_index_global": 19,
+          "text_uthmani": "ٱلصِّرَٰطَ",
+          "text_imlaei": "الصِّرَاطَ",
+          "normalized": "الصرط"
+        },
+        {
+          "surah": 1,
+          "ayah": 6,
+          "word_index_in_ayah": 3,
+          "word_index_global": 20,
+          "text_uthmani": "ٱلْمُسْتَقِيمَ",
+          "text_imlaei": "الْمُسْتَقِيمَ",
+          "normalized": "المستقيم"
+        }
+      ],
+      "full_uthmani": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "full_normalized": "اهدنا الصرط المستقيم"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "words": [
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 1,
+          "word_index_global": 21,
+          "text_uthmani": "صِرَٰطَ",
+          "text_imlaei": "صِرَاطَ",
+          "normalized": "صرط"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 2,
+          "word_index_global": 22,
+          "text_uthmani": "ٱلَّذِينَ",
+          "text_imlaei": "الَّذِينَ",
+          "normalized": "الذين"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 3,
+          "word_index_global": 23,
+          "text_uthmani": "أَنْعَمْتَ",
+          "text_imlaei": "أَنْعَمْتَ",
+          "normalized": "انعمت"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 4,
+          "word_index_global": 24,
+          "text_uthmani": "عَلَيْهِمْ",
+          "text_imlaei": "عَلَيْهِمْ",
+          "normalized": "عليهم"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 5,
+          "word_index_global": 25,
+          "text_uthmani": "غَيْرِ",
+          "text_imlaei": "غَيْرِ",
+          "normalized": "غير"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 6,
+          "word_index_global": 26,
+          "text_uthmani": "ٱلْمَغْضُوبِ",
+          "text_imlaei": "الْمَغْضُوبِ",
+          "normalized": "المغضوب"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 7,
+          "word_index_global": 27,
+          "text_uthmani": "عَلَيْهِمْ",
+          "text_imlaei": "عَلَيْهِمْ",
+          "normalized": "عليهم"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 8,
+          "word_index_global": 28,
+          "text_uthmani": "وَلَا",
+          "text_imlaei": "وَلَا",
+          "normalized": "ولا"
+        },
+        {
+          "surah": 1,
+          "ayah": 7,
+          "word_index_in_ayah": 9,
+          "word_index_global": 29,
+          "text_uthmani": "ٱلضَّآلِّينَ",
+          "text_imlaei": "الضَّالِّينَ",
+          "normalized": "الضالين"
+        }
+      ],
+      "full_uthmani": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "full_normalized": "صرط الذين انعمت عليهم غير المغضوب عليهم ولا الضالين"
+    }
+  ],
+  "words": [
+    {
+      "surah": 1,
+      "ayah": 1,
+      "word_index_in_ayah": 1,
+      "word_index_global": 1,
+      "text_uthmani": "بِسْمِ",
+      "text_imlaei": "بِسْمِ",
+      "normalized": "بسم"
+    },
+    {
+      "surah": 1,
+      "ayah": 1,
+      "word_index_in_ayah": 2,
+      "word_index_global": 2,
+      "text_uthmani": "ٱللَّهِ",
+      "text_imlaei": "اللَّهِ",
+      "normalized": "الله"
+    },
+    {
+      "surah": 1,
+      "ayah": 1,
+      "word_index_in_ayah": 3,
+      "word_index_global": 3,
+      "text_uthmani": "ٱلرَّحْمَـٰنِ",
+      "text_imlaei": "الرَّحْمَٰنِ",
+      "normalized": "الرحمن"
+    },
+    {
+      "surah": 1,
+      "ayah": 1,
+      "word_index_in_ayah": 4,
+      "word_index_global": 4,
+      "text_uthmani": "ٱلرَّحِيمِ",
+      "text_imlaei": "الرَّحِيمِ",
+      "normalized": "الرحيم"
+    },
+    {
+      "surah": 1,
+      "ayah": 2,
+      "word_index_in_ayah": 1,
+      "word_index_global": 5,
+      "text_uthmani": "ٱلْحَمْدُ",
+      "text_imlaei": "الْحَمْدُ",
+      "normalized": "الحمد"
+    },
+    {
+      "surah": 1,
+      "ayah": 2,
+      "word_index_in_ayah": 2,
+      "word_index_global": 6,
+      "text_uthmani": "لِلَّهِ",
+      "text_imlaei": "لِلَّهِ",
+      "normalized": "لله"
+    },
+    {
+      "surah": 1,
+      "ayah": 2,
+      "word_index_in_ayah": 3,
+      "word_index_global": 7,
+      "text_uthmani": "رَبِّ",
+      "text_imlaei": "رَبِّ",
+      "normalized": "رب"
+    },
+    {
+      "surah": 1,
+      "ayah": 2,
+      "word_index_in_ayah": 4,
+      "word_index_global": 8,
+      "text_uthmani": "ٱلْعَـٰلَمِينَ",
+      "text_imlaei": "الْعَالَمِينَ",
+      "normalized": "العلمين"
+    },
+    {
+      "surah": 1,
+      "ayah": 3,
+      "word_index_in_ayah": 1,
+      "word_index_global": 9,
+      "text_uthmani": "ٱلرَّحْمَـٰنِ",
+      "text_imlaei": "الرَّحْمَٰنِ",
+      "normalized": "الرحمن"
+    },
+    {
+      "surah": 1,
+      "ayah": 3,
+      "word_index_in_ayah": 2,
+      "word_index_global": 10,
+      "text_uthmani": "ٱلرَّحِيمِ",
+      "text_imlaei": "الرَّحِيمِ",
+      "normalized": "الرحيم"
+    },
+    {
+      "surah": 1,
+      "ayah": 4,
+      "word_index_in_ayah": 1,
+      "word_index_global": 11,
+      "text_uthmani": "مَـٰلِكِ",
+      "text_imlaei": "مَالِكِ",
+      "normalized": "ملك"
+    },
+    {
+      "surah": 1,
+      "ayah": 4,
+      "word_index_in_ayah": 2,
+      "word_index_global": 12,
+      "text_uthmani": "يَوْمِ",
+      "text_imlaei": "يَوْمِ",
+      "normalized": "يوم"
+    },
+    {
+      "surah": 1,
+      "ayah": 4,
+      "word_index_in_ayah": 3,
+      "word_index_global": 13,
+      "text_uthmani": "ٱلدِّينِ",
+      "text_imlaei": "الدِّينِ",
+      "normalized": "الدين"
+    },
+    {
+      "surah": 1,
+      "ayah": 5,
+      "word_index_in_ayah": 1,
+      "word_index_global": 14,
+      "text_uthmani": "إِيَّاكَ",
+      "text_imlaei": "إِيَّاكَ",
+      "normalized": "اياك"
+    },
+    {
+      "surah": 1,
+      "ayah": 5,
+      "word_index_in_ayah": 2,
+      "word_index_global": 15,
+      "text_uthmani": "نَعْبُدُ",
+      "text_imlaei": "نَعْبُدُ",
+      "normalized": "نعبد"
+    },
+    {
+      "surah": 1,
+      "ayah": 5,
+      "word_index_in_ayah": 3,
+      "word_index_global": 16,
+      "text_uthmani": "وَإِيَّاكَ",
+      "text_imlaei": "وَإِيَّاكَ",
+      "normalized": "واياك"
+    },
+    {
+      "surah": 1,
+      "ayah": 5,
+      "word_index_in_ayah": 4,
+      "word_index_global": 17,
+      "text_uthmani": "نَسْتَعِينُ",
+      "text_imlaei": "نَسْتَعِينُ",
+      "normalized": "نستعين"
+    },
+    {
+      "surah": 1,
+      "ayah": 6,
+      "word_index_in_ayah": 1,
+      "word_index_global": 18,
+      "text_uthmani": "ٱهْدِنَا",
+      "text_imlaei": "اهْدِنَا",
+      "normalized": "اهدنا"
+    },
+    {
+      "surah": 1,
+      "ayah": 6,
+      "word_index_in_ayah": 2,
+      "word_index_global": 19,
+      "text_uthmani": "ٱلصِّرَٰطَ",
+      "text_imlaei": "الصِّرَاطَ",
+      "normalized": "الصرط"
+    },
+    {
+      "surah": 1,
+      "ayah": 6,
+      "word_index_in_ayah": 3,
+      "word_index_global": 20,
+      "text_uthmani": "ٱلْمُسْتَقِيمَ",
+      "text_imlaei": "الْمُسْتَقِيمَ",
+      "normalized": "المستقيم"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 1,
+      "word_index_global": 21,
+      "text_uthmani": "صِرَٰطَ",
+      "text_imlaei": "صِرَاطَ",
+      "normalized": "صرط"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 2,
+      "word_index_global": 22,
+      "text_uthmani": "ٱلَّذِينَ",
+      "text_imlaei": "الَّذِينَ",
+      "normalized": "الذين"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 3,
+      "word_index_global": 23,
+      "text_uthmani": "أَنْعَمْتَ",
+      "text_imlaei": "أَنْعَمْتَ",
+      "normalized": "انعمت"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 4,
+      "word_index_global": 24,
+      "text_uthmani": "عَلَيْهِمْ",
+      "text_imlaei": "عَلَيْهِمْ",
+      "normalized": "عليهم"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 5,
+      "word_index_global": 25,
+      "text_uthmani": "غَيْرِ",
+      "text_imlaei": "غَيْرِ",
+      "normalized": "غير"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 6,
+      "word_index_global": 26,
+      "text_uthmani": "ٱلْمَغْضُوبِ",
+      "text_imlaei": "الْمَغْضُوبِ",
+      "normalized": "المغضوب"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 7,
+      "word_index_global": 27,
+      "text_uthmani": "عَلَيْهِمْ",
+      "text_imlaei": "عَلَيْهِمْ",
+      "normalized": "عليهم"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 8,
+      "word_index_global": 28,
+      "text_uthmani": "وَلَا",
+      "text_imlaei": "وَلَا",
+      "normalized": "ولا"
+    },
+    {
+      "surah": 1,
+      "ayah": 7,
+      "word_index_in_ayah": 9,
+      "word_index_global": 29,
+      "text_uthmani": "ٱلضَّآلِّينَ",
+      "text_imlaei": "الضَّالِّينَ",
+      "normalized": "الضالين"
+    }
+  ]
+}

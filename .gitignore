@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+*.db
+
+# Node & Expo
+node_modules/
+mobile/node_modules/
+.expo/
+mobile/.expo/
+mobile/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db

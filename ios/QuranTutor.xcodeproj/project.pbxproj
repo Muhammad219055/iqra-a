@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B24AD12CCD7FAC6F6B240F6 /* KFGQPC_Hafs.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24A5B445033E820769EB7325 /* KFGQPC_Hafs.otf */; };
+		1F3B7B96C23D8D1000D5D67B /* UthmanicHafs1Ver09.otf in Resources */ = {isa = PBXBuildFile; fileRef = F800649CBFA3549FE9B41A48 /* UthmanicHafs1Ver09.otf */; };
+		31CBDA063E3EF9D4073D8E0F /* MushafView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B83115153D0797B6817963 /* MushafView.swift */; };
+		33BE70323CE2833B723DB6DF /* UthmanicHafs.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E80E35BCB94FA1E802B08C4 /* UthmanicHafs.ttf */; };
+		3CAF567CF5B15260FD4A9936 /* quran_surah_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3492AAF987296EB1F9BCD55C /* quran_surah_1.json */; };
+		3D040F52E949F731487F5A7A /* PromptAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19C02EBAED92768E85F571 /* PromptAudioPlayer.swift */; };
+		3D244F7962DF9CD27069E71F /* AudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F1A16F7E7AF61C61334D7 /* AudioCaptureService.swift */; };
+		45A6831DFA73B12FE7C42FF8 /* ArabicNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0771C5EC5C90FB787B33AB22 /* ArabicNormalizer.swift */; };
+		6C8ED77D3A47916DB5DB330E /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6686B7B265F63B54D04EFA74 /* FontManager.swift */; };
+		78FF2342B3EEE0055E37171D /* QuranTutorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C431355296014CC62C4CEA /* QuranTutorApp.swift */; };
+		9CD043A88C636B2538CE4EEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2916874625A97939F9FC13D /* ContentView.swift */; };
+		A1E8082F42A0BF2D8AC41BFA /* ControlsBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3DB274DD6B291FD4E67A18 /* ControlsBarView.swift */; };
+		A34ECD571F9A3A7EA3B21758 /* surah_1_mishari.json in Resources */ = {isa = PBXBuildFile; fileRef = 6203A7D6C663BEC97672FA90 /* surah_1_mishari.json */; };
+		A6F21EA3B81569A906B68C1B /* QuranWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920B4FCEAFD2B61D6BAC216 /* QuranWord.swift */; };
+		CC804F2DB46EDE9F7F1BABAA /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CD8CE238C9BF13EBD8E5D /* StatsView.swift */; };
+		E78F520AF57942E2ED5AEF3C /* AmiriQuran-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAFE6254CCAAC138239222C2 /* AmiriQuran-Regular.ttf */; };
+		EF7D75709CAF3AB3B507316B /* RecitationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F288ED1465ED060D3C132 /* RecitationState.swift */; };
+		F0CA068EE9B55E112010B814 /* 001_mishari.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B4BA77BC79579C2C0D606F9 /* 001_mishari.mp3 */; };
+		FE0B523256B6B47AFB9667FB /* RecitationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77719BCBB92A8424A077415B /* RecitationCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0771C5EC5C90FB787B33AB22 /* ArabicNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabicNormalizer.swift; sourceTree = "<group>"; };
+		0C3DB274DD6B291FD4E67A18 /* ControlsBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsBarView.swift; sourceTree = "<group>"; };
+		24A5B445033E820769EB7325 /* KFGQPC_Hafs.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KFGQPC_Hafs.otf; sourceTree = "<group>"; };
+		309F1A16F7E7AF61C61334D7 /* AudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureService.swift; sourceTree = "<group>"; };
+		3492AAF987296EB1F9BCD55C /* quran_surah_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quran_surah_1.json; sourceTree = "<group>"; };
+		3B4BA77BC79579C2C0D606F9 /* 001_mishari.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 001_mishari.mp3; sourceTree = "<group>"; };
+		41C431355296014CC62C4CEA /* QuranTutorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranTutorApp.swift; sourceTree = "<group>"; };
+		4920B4FCEAFD2B61D6BAC216 /* QuranWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranWord.swift; sourceTree = "<group>"; };
+		496CD8CE238C9BF13EBD8E5D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		5E80E35BCB94FA1E802B08C4 /* UthmanicHafs.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UthmanicHafs.ttf; sourceTree = "<group>"; };
+		6203A7D6C663BEC97672FA90 /* surah_1_mishari.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = surah_1_mishari.json; sourceTree = "<group>"; };
+		6686B7B265F63B54D04EFA74 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		77719BCBB92A8424A077415B /* RecitationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecitationCoordinator.swift; sourceTree = "<group>"; };
+		9A9B73086802C548C79E6E30 /* QuranTutor.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QuranTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B83115153D0797B6817963 /* MushafView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushafView.swift; sourceTree = "<group>"; };
+		AE4F288ED1465ED060D3C132 /* RecitationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecitationState.swift; sourceTree = "<group>"; };
+		C85FB74C023677B8B3313BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CAFE6254CCAAC138239222C2 /* AmiriQuran-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AmiriQuran-Regular.ttf"; sourceTree = "<group>"; };
+		DE19C02EBAED92768E85F571 /* PromptAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptAudioPlayer.swift; sourceTree = "<group>"; };
+		F2916874625A97939F9FC13D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F800649CBFA3549FE9B41A48 /* UthmanicHafs1Ver09.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UthmanicHafs1Ver09.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		15967735B5B17732DF2D76AE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41C431355296014CC62C4CEA /* QuranTutorApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2B2D21E6F140B9EB0D1335DC /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				0771C5EC5C90FB787B33AB22 /* ArabicNormalizer.swift */,
+				6686B7B265F63B54D04EFA74 /* FontManager.swift */,
+				77719BCBB92A8424A077415B /* RecitationCoordinator.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		2BA7E7F0C1C5CEC22E429567 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B4BA77BC79579C2C0D606F9 /* 001_mishari.mp3 */,
+				CAFE6254CCAAC138239222C2 /* AmiriQuran-Regular.ttf */,
+				C85FB74C023677B8B3313BAA /* Info.plist */,
+				24A5B445033E820769EB7325 /* KFGQPC_Hafs.otf */,
+				3492AAF987296EB1F9BCD55C /* quran_surah_1.json */,
+				6203A7D6C663BEC97672FA90 /* surah_1_mishari.json */,
+				5E80E35BCB94FA1E802B08C4 /* UthmanicHafs.ttf */,
+				F800649CBFA3549FE9B41A48 /* UthmanicHafs1Ver09.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C01A397E47E33D79FC72BC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B73086802C548C79E6E30 /* QuranTutor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A228E78093A2291685A7A99C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				309F1A16F7E7AF61C61334D7 /* AudioCaptureService.swift */,
+				DE19C02EBAED92768E85F571 /* PromptAudioPlayer.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		AF693406F2A73496DE8A46BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4920B4FCEAFD2B61D6BAC216 /* QuranWord.swift */,
+				AE4F288ED1465ED060D3C132 /* RecitationState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4EB719CD74850538103E6C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2916874625A97939F9FC13D /* ContentView.swift */,
+				0C3DB274DD6B291FD4E67A18 /* ControlsBarView.swift */,
+				A2B83115153D0797B6817963 /* MushafView.swift */,
+				496CD8CE238C9BF13EBD8E5D /* StatsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D224D86987264EAC10A87A36 /* QuranTutor */ = {
+			isa = PBXGroup;
+			children = (
+				15967735B5B17732DF2D76AE /* App */,
+				A228E78093A2291685A7A99C /* Audio */,
+				2B2D21E6F140B9EB0D1335DC /* Engine */,
+				AF693406F2A73496DE8A46BA /* Models */,
+				2BA7E7F0C1C5CEC22E429567 /* Resources */,
+				C4EB719CD74850538103E6C2 /* Views */,
+			);
+			path = QuranTutor;
+			sourceTree = "<group>";
+		};
+		E495C50CAC6B5BAE243F3D7D = {
+			isa = PBXGroup;
+			children = (
+				D224D86987264EAC10A87A36 /* QuranTutor */,
+				8C01A397E47E33D79FC72BC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A77F80769037E084A46BBE6 /* QuranTutor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA59A925BE38DDE2AB78EAD /* Build configuration list for PBXNativeTarget "QuranTutor" */;
+			buildPhases = (
+				B01668626777978106B92EA6 /* Sources */,
+				19CC943746E4950E1DA26BA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuranTutor;
+			packageProductDependencies = (
+			);
+			productName = QuranTutor;
+			productReference = 9A9B73086802C548C79E6E30 /* QuranTutor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A05A80D37528FB84C1C0153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = EA3D17943AED09E786347653 /* Build configuration list for PBXProject "QuranTutor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E495C50CAC6B5BAE243F3D7D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8C01A397E47E33D79FC72BC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A77F80769037E084A46BBE6 /* QuranTutor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19CC943746E4950E1DA26BA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CA068EE9B55E112010B814 /* 001_mishari.mp3 in Resources */,
+				E78F520AF57942E2ED5AEF3C /* AmiriQuran-Regular.ttf in Resources */,
+				1B24AD12CCD7FAC6F6B240F6 /* KFGQPC_Hafs.otf in Resources */,
+				33BE70323CE2833B723DB6DF /* UthmanicHafs.ttf in Resources */,
+				1F3B7B96C23D8D1000D5D67B /* UthmanicHafs1Ver09.otf in Resources */,
+				3CAF567CF5B15260FD4A9936 /* quran_surah_1.json in Resources */,
+				A34ECD571F9A3A7EA3B21758 /* surah_1_mishari.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01668626777978106B92EA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A6831DFA73B12FE7C42FF8 /* ArabicNormalizer.swift in Sources */,
+				3D244F7962DF9CD27069E71F /* AudioCaptureService.swift in Sources */,
+				9CD043A88C636B2538CE4EEA /* ContentView.swift in Sources */,
+				A1E8082F42A0BF2D8AC41BFA /* ControlsBarView.swift in Sources */,
+				6C8ED77D3A47916DB5DB330E /* FontManager.swift in Sources */,
+				31CBDA063E3EF9D4073D8E0F /* MushafView.swift in Sources */,
+				3D040F52E949F731487F5A7A /* PromptAudioPlayer.swift in Sources */,
+				78FF2342B3EEE0055E37171D /* QuranTutorApp.swift in Sources */,
+				A6F21EA3B81569A906B68C1B /* QuranWord.swift in Sources */,
+				FE0B523256B6B47AFB9667FB /* RecitationCoordinator.swift in Sources */,
+				EF7D75709CAF3AB3B507316B /* RecitationState.swift in Sources */,
+				CC804F2DB46EDE9F7F1BABAA /* StatsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D32725D49BA6B7F75DAC8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EA2BA815E9AD303FBCDCEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		935FCD36322A094B1C416DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuranTutor/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammad.QuranTutor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB692354FCEAD2D26FFD987A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = QuranTutor/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.muhammad.QuranTutor;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AA59A925BE38DDE2AB78EAD /* Build configuration list for PBXNativeTarget "QuranTutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				935FCD36322A094B1C416DF7 /* Debug */,
+				BB692354FCEAD2D26FFD987A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA3D17943AED09E786347653 /* Build configuration list for PBXProject "QuranTutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EA2BA815E9AD303FBCDCEB8 /* Debug */,
+				3D32725D49BA6B7F75DAC8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A05A80D37528FB84C1C0153 /* Project object */;
+}

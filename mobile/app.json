@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Quran Tutor",
+    "slug": "quran-tutor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0d1117"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muhammad.qurantutor",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Quran Tutor requires microphone access to listen to your recitation and provide live teacher feedback."
+      }
+    },
+    "android": {
+      "package": "com.muhammad.qurantutor",
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Quran Tutor requires microphone access to listen to your recitation and provide live teacher feedback."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
