@@ -1,0 +1,14 @@
+{
+  "model": "tarteel-ai/whisper-base-ar-quran",
+  "revision": "5c3c53fdf9272c4f6ee0bee09a1e5a4a615ee25c",
+  "format": "ggml-f16",
+  "bytes": 147951465,
+  "sha256": "aaebca10e2a65a6dda073a6b3ac59900f91887628acf872c565a0198ee850ead",
+  "engine_commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037",
+  "vad": {
+    "model": "ggml-org/whisper-vad",
+    "revision": "9ffd54a1e1ee413ddf265af9913beaf518d1639b",
+    "file": "ggml-silero-v6.2.0.bin",
+    "sha256": "2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987"
+  }
+}

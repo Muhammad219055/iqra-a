@@ -1,0 +1,823 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test -project /private/tmp/quran-ios27-ui/QuranUICheck.xcodeproj -scheme QuranUICheck -destination "platform=iOS Simulator,id=830C6FCA-5642-40A2-AA5D-DCAC71EEB441" -parallel-testing-enabled NO -derivedDataPath /private/tmp/quran-ios27-ui/build -resultBundlePath /private/tmp/quran-ios27-ui/reader-final.xcresult
+
+Writing result bundle at path:
+	/private/tmp/quran-ios27-ui/reader-final.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (2 targets)
+    Target 'ReaderTests' in project 'QuranUICheck'
+        ➜ Explicit dependency on target 'QuranUICheck' in project 'QuranUICheck'
+    Target 'QuranUICheck' in project 'QuranUICheck' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 4a6f3019d5eb59dd291679eed08be63d
+Build description path: /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/XCBuildData/4a6f3019d5eb59dd291679eed08be63d.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk /tmp/quran-ios27-ui/build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+    cd /tmp/quran-ios27-ui/QuranUICheck.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -o /tmp/quran-ios27-ui/build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+
+ProcessInfoPlistFile /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/QuranUICheck.app/Info.plist /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/QuranUICheck.build/empty-QuranUICheck.plist (in target 'QuranUICheck' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-infoPlistUtility /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/QuranUICheck.build/empty-QuranUICheck.plist -producttype com.apple.product-type.application -genpkginfo /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/QuranUICheck.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/QuranUICheck.app/Info.plist
+
+SwiftDriver ReaderTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ReaderTests -Onone @/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios16.0-simulator -g -module-cache-path /tmp/quran-ios27-ui/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/quran-ios27-ui/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/quran-ios27-ui/build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/quran-ios27-ui/build/ModuleCache.noindex -sdk-module-cache-path /tmp/quran-ios27-ui/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/quran-ios27-ui/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-generated-files.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-own-target-headers.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-project-headers.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources/arm64 -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-Swift.h -working-directory /tmp/quran-ios27-ui -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/Info.plist /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/empty-ReaderTests.plist (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-infoPlistUtility /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/empty-ReaderTests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/Info.plist
+
+SwiftCompile normal arm64 Compiling\ ReaderTests.swift /tmp/quran-ios27-ui/Tests/ReaderTests.swift (in target 'ReaderTests' from project 'QuranUICheck')
+
+SwiftCompile normal arm64 /tmp/quran-ios27-ui/Tests/ReaderTests.swift (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-SwiftPerFileCompile ReaderTests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ ReaderTests (in target 'ReaderTests' from project 'QuranUICheck')
+
+SwiftCompile normal arm64 (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for ReaderTests (in target 'ReaderTests' from project 'QuranUICheck')
+
+SwiftDriver\ Compilation\ Requirements ReaderTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ReaderTests -Onone @/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios16.0-simulator -g -module-cache-path /tmp/quran-ios27-ui/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/quran-ios27-ui/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/quran-ios27-ui/build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/quran-ios27-ui/build/ModuleCache.noindex -sdk-module-cache-path /tmp/quran-ios27-ui/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/quran-ios27-ui/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-generated-files.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-own-target-headers.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-project-headers.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources/arm64 -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-Swift.h -working-directory /tmp/quran-ios27-ui -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.swiftsourceinfo (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.swiftsourceinfo /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.abi.json (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.abi.json /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReaderTests.swift (in target 'ReaderTests' from project 'QuranUICheck')
+
+SwiftDriver\ Compilation ReaderTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name ReaderTests -Onone @/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios16.0-simulator -g -module-cache-path /tmp/quran-ios27-ui/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/quran-ios27-ui/build/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/quran-ios27-ui/build/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/quran-ios27-ui/build/ModuleCache.noindex -sdk-module-cache-path /tmp/quran-ios27-ui/build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /tmp/quran-ios27-ui/build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-generated-files.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-own-target-headers.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-all-target-headers.hmap -Xcc -iquote -Xcc /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests-project-headers.hmap -Xcc -I/tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources/arm64 -Xcc -I/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests-Swift.h -working-directory /tmp/quran-ios27-ui -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/ReaderTests normal (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -O0 -Xlinker -no_warn_duplicate_libraries -L/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/quran-ios27-ui/build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -filelist /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/ReaderTests
+/tmp/quran-ios27-ui/QuranUICheck.xcodeproj: ReaderTests: ld: warning: building for iOS-simulator-16.0, but linking with dylib '@rpath/XCTest.framework/XCTest' which was built for newer version 17.0
+/tmp/quran-ios27-ui/QuranUICheck.xcodeproj: ReaderTests: ld: warning: building for iOS-simulator-16.0, but linking with dylib '@rpath/libXCTestSwiftSupport.dylib' which was built for newer version 17.0
+/tmp/quran-ios27-ui/QuranUICheck.xcodeproj: ReaderTests: ld: warning: building for iOS-simulator-16.0, but linking with dylib '@rpath/XCUIAutomation.framework/XCUIAutomation' which was built for newer version 17.0
+
+CopySwiftLibs /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/ReaderTests --scan-folder /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/Frameworks --scan-folder /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/PlugIns --scan-folder /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/SystemExtensions --scan-folder /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'ReaderTests' from project 'QuranUICheck')
+    cd /tmp/quran-ios27-ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name ReaderTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 16.0 --bundle-identifier com.local.qurancheck.ReaderTests --output /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest --target-triple arm64-apple-ios16.0-simulator --binary-file /tmp/quran-ios27-ui/build/Build/Products/Debug-iphonesimulator/ReaderTests-Runner.app/PlugIns/ReaderTests.xctest/ReaderTests --dependency-file /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests_dependency_info.dat --stringsdata-file /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.SwiftFileList --metadata-file-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests.DependencyMetadataFileList --static-metadata-file-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/ReaderTests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/QuranUICheck.build/Debug-iphonesimulator/ReaderTests.build/Objects-normal/arm64/ReaderTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-21 18:40:33.863 appintentsmetadataprocessor[47065:132344] Starting appintentsmetadataprocessor export
+2026-10-21 18:40:33.871 appintentsmetadataprocessor[47065:132344] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+PruneExplicitPrecompiledModules /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/quran-ios27-ui/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/quran-ios27-ui/build/SDKExplicitPrecompiledModules
+
+2026-10-21 18:40:33.996 xcodebuild[46333:132115] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-21 18:40:38.134171+0500 ReaderTests-Runner[47066:132533] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-10-21 18:40:44.384.
+Test Suite 'ReaderTests.xctest' started at 2026-10-21 18:40:44.393.
+Test Suite 'ReaderTests' started at 2026-10-21 18:40:44.393.
+Test Case '-[ReaderTests.ReaderTests testReader]' started.
+    t =     0.01s Start Test at 2026-10-21 18:40:44.400
+    t =     0.09s Set Up
+    t =     0.09s Open host.exp.Exponent
+    t =     0.09s     Activate host.exp.Exponent
+    t =     0.21s         Wait for host.exp.Exponent to idle
+    t =     0.25s Waiting 3.0s for "Quran Tutor" Button to exist
+objc[47066]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.ErhkOF/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10a80c398) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.ErhkOF/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10a944310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     1.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Quran Tutor" Button`
+    t =     1.27s         Checking existence of `"Quran Tutor" Button`
+    t =     1.59s         Capturing element debug description
+    t =     2.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Quran Tutor" Button`
+    t =     2.28s         Checking existence of `"Quran Tutor" Button`
+    t =     2.58s         Capturing element debug description
+    t =     3.25s     Checking `Expect predicate `existsNoRetry == 1` for object "Quran Tutor" Button`
+    t =     3.25s         Checking existence of `"Quran Tutor" Button`
+    t =     3.56s         Capturing element debug description
+    t =     3.56s     Checking existence of `"Quran Tutor" Button`
+    t =     3.85s Collecting debug information to assist test failure triage
+    t =     3.85s     Requesting snapshot of accessibility hierarchy for app with pid 9639
+    t =     4.28s Checking existence of `"Close" Button`
+    t =     4.57s Waiting 60.0s for "Next page" Button to exist
+    t =     5.61s     Checking `Expect predicate `existsNoRetry == 1` for object "Next page" Button`
+    t =     5.61s         Checking existence of `"Next page" Button`
+    t =     6.95s Checking `Expect predicate `hittable == 1` for object "Browse surahs or go to a page" Button`
+    t =     6.95s     Find the "Browse surahs or go to a page" Button
+    t =     7.35s Tap "Browse surahs or go to a page" Button[0.50, 0.50]
+    t =     7.35s     Wait for host.exp.Exponent to idle
+    t =     7.35s     Find the "Browse surahs or go to a page" Button
+    t =     7.64s     Check for interrupting elements affecting "Browse surahs or go to a page" Button
+    t =     7.88s     Synthesize event
+    t =     7.94s         Find the "Browse surahs or go to a page" Button
+    t =     8.23s         Find the "Browse surahs or go to a page" Button
+    t =     8.52s         Find the "Browse surahs or go to a page" Button
+    t =     9.14s     Wait for host.exp.Exponent to idle
+    t =     9.27s Waiting 5.0s for "Page number" TextField to exist
+    t =    10.35s     Checking `Expect predicate `existsNoRetry == 1` for object "Page number" TextField`
+    t =    10.35s         Checking existence of `"Page number" TextField`
+    t =    11.68s Checking `Expect predicate `hittable == 1` for object "Page number" TextField`
+    t =    11.68s     Find the "Page number" TextField
+    t =    12.05s Tap "Page 1–604" TextField[0.50, 0.50]
+    t =    12.05s     Wait for host.exp.Exponent to idle
+    t =    12.05s     Find the "Page 1–604" TextField
+    t =    12.34s     Check for interrupting elements affecting "Page 1–604" TextField
+    t =    12.59s     Synthesize event
+    t =    12.64s         Find the "Page 1–604" TextField
+    t =    12.92s         Find the "Page 1–604" TextField
+    t =    13.21s         Find the "Page 1–604" TextField
+    t =    13.78s     Wait for host.exp.Exponent to idle
+    t =    14.06s Find the "Page 1–604" TextField
+    t =    14.38s Type '1' into "Page 1–604" TextField
+    t =    14.38s     Wait for host.exp.Exponent to idle
+    t =    14.44s     Find the "Page 1–604" TextField
+    t =    14.75s     Check for interrupting elements affecting "Page 1–604" TextField
+    t =    14.99s     Synthesize event
+    t =    15.32s     Wait for host.exp.Exponent to idle
+    t =    16.35s Checking `Expect predicate `hittable == 1` for object "Go to page" Button`
+    t =    16.35s     Find the "Go to page" Button
+    t =    16.74s Tap "Go to page" Button[0.50, 0.50]
+    t =    16.74s     Wait for host.exp.Exponent to idle
+    t =    16.74s     Find the "Go to page" Button
+    t =    17.05s     Check for interrupting elements affecting "Go to page" Button
+    t =    17.29s     Synthesize event
+    t =    17.34s         Find the "Go to page" Button
+    t =    17.64s         Find the "Go to page" Button
+    t =    17.96s         Find the "Go to page" Button
+    t =    18.56s     Wait for host.exp.Exponent to idle
+    t =    19.02s Waiting 10.0s for Button (First Match) to exist
+    t =    20.06s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    20.06s         Checking existence of `Button (First Match)`
+    t =    20.08s Find the Application 'host.exp.Exponent'
+    t =    20.29s Added attachment named 'page-001'
+    t =    20.30s Find the "Previous page" Button
+    t =    21.40s Checking `Expect predicate `hittable == 1` for object "Next page" Button`
+    t =    21.40s     Find the "Next page" Button
+    t =    21.51s Tap "Next page" Button[0.50, 0.50]
+    t =    21.51s     Wait for host.exp.Exponent to idle
+    t =    21.52s     Find the "Next page" Button
+    t =    21.59s     Check for interrupting elements affecting "Next page" Button
+    t =    21.66s     Synthesize event
+    t =    21.66s         Find the "Next page" Button
+    t =    21.74s         Find the "Next page" Button
+    t =    21.82s         Find the "Next page" Button
+    t =    22.18s     Wait for host.exp.Exponent to idle
+    t =    22.19s Waiting 10.0s for Button (First Match) to exist
+    t =    23.23s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    23.23s         Checking existence of `Button (First Match)`
+    t =    23.25s Find the Application 'host.exp.Exponent'
+    t =    23.51s Added attachment named 'page-002'
+    t =    24.55s Checking `Expect predicate `hittable == 1` for object "Next page" Button`
+    t =    24.55s     Find the "Next page" Button
+    t =    24.79s Tap "Next page" Button[0.50, 0.50]
+    t =    24.79s     Wait for host.exp.Exponent to idle
+    t =    24.79s     Find the "Next page" Button
+    t =    24.99s     Check for interrupting elements affecting "Next page" Button
+    t =    25.14s     Synthesize event
+    t =    25.14s         Find the "Next page" Button
+    t =    25.34s         Find the "Next page" Button
+    t =    25.55s         Find the "Next page" Button
+    t =    26.03s     Wait for host.exp.Exponent to idle
+    t =    26.03s Waiting 10.0s for Button (First Match) to exist
+    t =    27.07s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    27.07s         Checking existence of `Button (First Match)`
+    t =    27.08s Find the Application 'host.exp.Exponent'
+    t =    27.47s Added attachment named 'page-003'
+    t =    27.47s Swipe left Application 'host.exp.Exponent'
+    t =    27.47s     Wait for host.exp.Exponent to idle
+    t =    27.48s     Find the Application 'host.exp.Exponent'
+    t =    27.96s     Check for interrupting elements affecting "Expo Go" Application
+    t =    28.24s     Synthesize event
+    t =    28.71s     Wait for host.exp.Exponent to idle
+    t =    28.84s Waiting 10.0s for Button (First Match) to exist
+    t =    29.87s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    29.87s         Checking existence of `Button (First Match)`
+    t =    29.89s Swipe right Application 'host.exp.Exponent'
+    t =    29.89s     Wait for host.exp.Exponent to idle
+    t =    29.89s     Find the Application 'host.exp.Exponent'
+    t =    30.04s     Check for interrupting elements affecting "Expo Go" Application
+    t =    30.20s     Synthesize event
+    t =    30.62s     Wait for host.exp.Exponent to idle
+    t =    30.75s Waiting 10.0s for Button (First Match) to exist
+    t =    31.79s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    31.79s         Checking existence of `Button (First Match)`
+    t =    31.80s Tap Application 'host.exp.Exponent'[0.50, 0.50]
+    t =    31.80s     Wait for host.exp.Exponent to idle
+    t =    31.81s     Find the Application 'host.exp.Exponent'
+    t =    32.06s     Check for interrupting elements affecting "Expo Go" Application
+    t =    32.31s     Synthesize event
+    t =    32.31s         Find the Application 'host.exp.Exponent'
+    t =    32.53s         Find the Application 'host.exp.Exponent'
+    t =    32.76s         Find the Application 'host.exp.Exponent'
+    t =    33.26s     Wait for host.exp.Exponent to idle
+    t =    34.36s Checking `Expect predicate `exists == 0` for object "Browse surahs or go to a page" Button`
+    t =    34.36s     Checking existence of `"Browse surahs or go to a page" Button`
+    t =    34.77s Find the Application 'host.exp.Exponent'
+    t =    35.11s Added attachment named 'reading-focus'
+    t =    35.11s Tap Application 'host.exp.Exponent'[0.50, 0.50]
+    t =    35.11s     Wait for host.exp.Exponent to idle
+    t =    35.12s     Find the Application 'host.exp.Exponent'
+    t =    35.35s     Check for interrupting elements affecting "Expo Go" Application
+    t =    35.62s     Synthesize event
+    t =    35.62s         Find the Application 'host.exp.Exponent'
+    t =    35.85s         Find the Application 'host.exp.Exponent'
+    t =    36.08s         Find the Application 'host.exp.Exponent'
+    t =    36.60s     Wait for host.exp.Exponent to idle
+    t =    36.67s Waiting 5.0s for "Browse surahs or go to a page" Button to exist
+    t =    37.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Browse surahs or go to a page" Button`
+    t =    37.70s         Checking existence of `"Browse surahs or go to a page" Button`
+    t =    39.10s Checking `Expect predicate `hittable == 1` for object "Browse surahs or go to a page" Button`
+    t =    39.18s     Find the "Browse surahs or go to a page" Button
+    t =    39.73s Tap "Browse surahs or go to a page" Button[0.50, 0.50]
+    t =    39.73s     Wait for host.exp.Exponent to idle
+    t =    39.73s     Find the "Browse surahs or go to a page" Button
+    t =    40.05s     Check for interrupting elements affecting "Browse surahs or go to a page" Button
+    t =    40.32s     Synthesize event
+    t =    40.32s         Find the "Browse surahs or go to a page" Button
+    t =    40.64s         Find the "Browse surahs or go to a page" Button
+    t =    40.96s         Find the "Browse surahs or go to a page" Button
+    t =    41.57s     Wait for host.exp.Exponent to idle
+    t =    42.02s Waiting 10.0s for "Page number" TextField to exist
+    t =    43.04s     Checking `Expect predicate `existsNoRetry == 1` for object "Page number" TextField`
+    t =    43.04s         Checking existence of `"Page number" TextField`
+    t =    43.36s Checking existence of `"quran-drawer" Other`
+    t =    43.67s Find the "quran-drawer" Other
+    t =    43.98s Find the Application 'host.exp.Exponent'
+    t =    44.21s Find the Application 'host.exp.Exponent'
+    t =    44.53s Added attachment named 'navigation-drawer'
+    t =    45.55s Checking `Expect predicate `hittable == 1` for object Any (First Match)`
+    t =    45.55s     Find the Any (First Match)
+    t =    45.59s Tap "Juz" Other[0.50, 0.50]
+    t =    45.59s     Wait for host.exp.Exponent to idle
+    t =    45.60s     Find the "Juz" Other
+    t =    45.61s     Check for interrupting elements affecting "Juz" Other
+    t =    45.87s     Synthesize event
+    t =    45.87s         Find the "Juz" Other
+    t =    45.89s         Find the "Juz" Other
+    t =    45.90s         Find the "Juz" Other
+    t =    46.20s     Wait for host.exp.Exponent to idle
+    t =    46.21s Waiting 5.0s for "Juz 2, page 22" Button to exist
+    t =    47.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Juz 2, page 22" Button`
+    t =    47.24s         Checking existence of `"Juz 2, page 22" Button`
+    t =    48.59s Checking `Expect predicate `hittable == 1` for object "Juz 2, page 22" Button`
+    t =    48.59s     Find the "Juz 2, page 22" Button
+    t =    48.96s Tap "Juz 2, page 22" Button[0.50, 0.50]
+    t =    48.96s     Wait for host.exp.Exponent to idle
+    t =    48.96s     Find the "Juz 2, page 22" Button
+    t =    49.28s     Check for interrupting elements affecting "Juz 2, page 22" Button
+    t =    49.52s     Synthesize event
+    t =    49.52s         Find the "Juz 2, page 22" Button
+    t =    49.83s         Find the "Juz 2, page 22" Button
+    t =    50.16s         Find the "Juz 2, page 22" Button
+    t =    50.76s     Wait for host.exp.Exponent to idle
+    t =    51.19s Waiting 10.0s for Button (First Match) to exist
+    t =    52.20s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    52.20s         Checking existence of `Button (First Match)`
+    t =    53.26s Checking `Expect predicate `exists == 0` for object "quran-drawer" Other`
+    t =    53.26s     Checking existence of `"quran-drawer" Other`
+    t =    54.88s Checking `Expect predicate `hittable == 1` for object "Browse surahs or go to a page" Button`
+    t =    54.88s     Find the "Browse surahs or go to a page" Button
+    t =    55.45s Tap "Browse surahs or go to a page" Button[0.50, 0.50]
+    t =    55.45s     Wait for host.exp.Exponent to idle
+    t =    55.45s     Find the "Browse surahs or go to a page" Button
+    t =    55.93s     Check for interrupting elements affecting "Browse surahs or go to a page" Button
+    t =    56.29s     Synthesize event
+    t =    56.29s         Find the "Browse surahs or go to a page" Button
+    t =    56.76s         Find the "Browse surahs or go to a page" Button
+    t =    57.23s         Find the "Browse surahs or go to a page" Button
+    t =    58.00s     Wait for host.exp.Exponent to idle
+    t =    58.44s Waiting 5.0s for "Page number" TextField to exist
+    t =    59.47s     Checking `Expect predicate `existsNoRetry == 1` for object "Page number" TextField`
+    t =    59.47s         Checking existence of `"Page number" TextField`
+    t =    60.97s Checking `Expect predicate `hittable == 1` for object "Page number" TextField`
+    t =    60.98s     Find the "Page number" TextField
+    t =    61.46s Tap "Page 1–604" TextField[0.50, 0.50]
+    t =    61.47s     Wait for host.exp.Exponent to idle
+    t =    61.47s     Find the "Page 1–604" TextField
+    t =    61.92s     Check for interrupting elements affecting "Page 1–604" TextField
+    t =    62.29s     Synthesize event
+    t =    62.29s         Find the "Page 1–604" TextField
+    t =    62.74s         Find the "Page 1–604" TextField
+    t =    63.20s         Find the "Page 1–604" TextField
+    t =    63.94s     Wait for host.exp.Exponent to idle
+    t =    64.22s Find the "Page 1–604" TextField
+    t =    64.68s Type '605' into "Page 1–604" TextField
+    t =    64.68s     Wait for host.exp.Exponent to idle
+    t =    64.68s     Find the "Page 1–604" TextField
+    t =    65.14s     Check for interrupting elements affecting "Page 1–604" TextField
+    t =    65.54s     Synthesize event
+    t =    65.81s     Wait for host.exp.Exponent to idle
+    t =    66.85s Checking `Expect predicate `hittable == 1` for object "Go to page" Button`
+    t =    66.86s     Find the "Go to page" Button
+    t =    67.74s Tap "Go to page" Button[0.50, 0.50]
+    t =    67.74s     Wait for host.exp.Exponent to idle
+    t =    67.74s     Find the "Go to page" Button
+    t =    68.41s     Check for interrupting elements affecting "Go to page" Button
+    t =    68.88s     Synthesize event
+    t =    68.88s         Find the "Go to page" Button
+    t =    69.40s         Find the "Go to page" Button
+    t =    69.91s         Find the "Go to page" Button
+    t =    70.73s     Wait for host.exp.Exponent to idle
+    t =    70.73s Waiting 5.0s for "Enter a page from 1 to 604." StaticText to exist
+    t =    71.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Enter a page from 1 to 604." StaticText`
+    t =    71.77s         Checking existence of `"Enter a page from 1 to 604." StaticText`
+    t =    73.29s Checking `Expect predicate `hittable == 1` for object "Page number" TextField`
+    t =    73.29s     Find the "Page number" TextField
+    t =    73.80s Tap "Page 1–604" TextField[0.50, 0.50]
+    t =    73.80s     Wait for host.exp.Exponent to idle
+    t =    73.80s     Find the "Page 1–604" TextField
+    t =    74.26s     Check for interrupting elements affecting "Page 1–604" TextField
+    t =    74.63s     Synthesize event
+    t =    74.63s         Find the "Page 1–604" TextField
+    t =    75.10s         Find the "Page 1–604" TextField
+    t =    75.56s         Find the "Page 1–604" TextField
+    t =    76.31s     Wait for host.exp.Exponent to idle
+    t =    76.32s Find the "Page 1–604" TextField
+    t =    77.38s Type '604' into "Page 1–604" TextField
+    t =    77.38s     Wait for host.exp.Exponent to idle
+    t =    77.74s     Find the "Page 1–604" TextField
+    t =    78.26s     Check for interrupting elements affecting "Page 1–604" TextField
+    t =    78.64s     Synthesize event
+    t =    78.95s     Wait for host.exp.Exponent to idle
+    t =    80.17s Checking `Expect predicate `hittable == 1` for object "Go to page" Button`
+    t =    80.17s     Find the "Go to page" Button
+    t =    80.70s Tap "Go to page" Button[0.50, 0.50]
+    t =    80.70s     Wait for host.exp.Exponent to idle
+    t =    80.70s     Find the "Go to page" Button
+    t =    81.20s     Check for interrupting elements affecting "Go to page" Button
+    t =    81.57s     Synthesize event
+    t =    81.57s         Find the "Go to page" Button
+    t =    82.09s         Find the "Go to page" Button
+    t =    82.62s         Find the "Go to page" Button
+    t =    83.41s     Wait for host.exp.Exponent to idle
+    t =    83.46s Waiting 10.0s for Button (First Match) to exist
+    t =    84.49s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    84.49s         Checking existence of `Button (First Match)`
+    t =    84.51s Find the Application 'host.exp.Exponent'
+    t =    84.87s Added attachment named 'page-604'
+    t =    84.87s Find the "Next page" Button
+    t =    86.10s Checking `Expect predicate `hittable == 1` for object "Hide words for memorization" Button`
+    t =    86.11s     Find the "Hide words for memorization" Button
+    t =    86.35s Tap "Hide words for memorization" Button[0.50, 0.50]
+    t =    86.35s     Wait for host.exp.Exponent to idle
+    t =    86.35s     Find the "Hide words for memorization" Button
+    t =    86.55s     Check for interrupting elements affecting "Hide words for memorization" Button
+    t =    86.70s     Synthesize event
+    t =    86.71s         Find the "Hide words for memorization" Button
+    t =    86.90s         Find the "Hide words for memorization" Button
+    t =    87.10s         Find the "Hide words for memorization" Button
+    t =    87.59s     Wait for host.exp.Exponent to idle
+    t =    87.59s Waiting 5.0s for Button (First Match) to exist
+    t =    88.61s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    88.61s         Checking existence of `Button (First Match)`
+    t =    88.68s Find the Application 'host.exp.Exponent'
+    t =    88.87s Added attachment named 'memorize'
+    t =    88.87s Get all elements bound by index for: Elements matching predicate 'label BEGINSWITH "Hidden word"'
+    t =    89.22s Find the Button (Element at index 0)
+    t =    89.34s Find the Button (Element at index 1)
+    t =    89.48s Find the Button (Element at index 2)
+    t =    89.61s Find the Button (Element at index 3)
+    t =    89.73s Find the Button (Element at index 4)
+    t =    89.85s Find the Button (Element at index 5)
+    t =    89.98s Find the Button (Element at index 6)
+    t =    90.10s Find the Button (Element at index 7)
+    t =    90.23s Find the Button (Element at index 8)
+    t =    90.39s Find the Button (Element at index 9)
+    t =    90.51s Find the Button (Element at index 10)
+    t =    90.64s Find the Button (Element at index 11)
+    t =    90.77s Find the Button (Element at index 12)
+    t =    90.89s Find the Button (Element at index 13)
+    t =    91.02s Find the Button (Element at index 14)
+    t =    91.15s Find the Button (Element at index 15)
+    t =    91.28s Find the Button (Element at index 16)
+    t =    91.41s Find the Button (Element at index 17)
+    t =    91.54s Find the Button (Element at index 18)
+    t =    91.67s Find the Button (Element at index 19)
+    t =    91.80s Find the Button (Element at index 20)
+    t =    91.93s Find the Button (Element at index 21)
+    t =    92.06s Find the Button (Element at index 22)
+    t =    92.20s Find the Button (Element at index 23)
+    t =    92.33s Find the Button (Element at index 24)
+    t =    92.46s Find the Button (Element at index 25)
+    t =    92.60s Find the Button (Element at index 26)
+    t =    92.74s Find the Button (Element at index 27)
+    t =    92.88s Find the Button (Element at index 28)
+    t =    93.02s Find the Button (Element at index 29)
+    t =    93.17s Find the Button (Element at index 30)
+    t =    93.31s Find the Button (Element at index 31)
+    t =    93.45s Find the Button (Element at index 32)
+    t =    93.59s Find the Button (Element at index 33)
+    t =    93.73s Find the Button (Element at index 34)
+    t =    93.87s Find the Button (Element at index 35)
+    t =    94.01s Find the Button (Element at index 36)
+    t =    94.23s Find the Button (Element at index 37)
+    t =    94.38s Find the Button (Element at index 38)
+    t =    94.52s Find the Button (Element at index 39)
+    t =    94.67s Find the Button (Element at index 40)
+    t =    94.82s Find the Button (Element at index 41)
+    t =    94.97s Find the Button (Element at index 42)
+    t =    95.11s Find the Button (Element at index 43)
+    t =    95.26s Find the Button (Element at index 44)
+    t =    95.41s Find the Button (Element at index 45)
+    t =    95.55s Find the Button (Element at index 46)
+    t =    95.70s Find the Button (Element at index 47)
+    t =    95.85s Find the Button (Element at index 48)
+    t =    95.99s Find the Button (Element at index 49)
+    t =    96.14s Find the Button (Element at index 50)
+    t =    96.29s Find the Button (Element at index 51)
+    t =    96.44s Find the Button (Element at index 52)
+    t =    96.59s Find the Button (Element at index 53)
+    t =    96.74s Find the Button (Element at index 54)
+    t =    96.89s Find the Button (Element at index 55)
+    t =    97.04s Find the Button (Element at index 56)
+    t =    97.19s Find the Button (Element at index 57)
+    t =    97.34s Find the Button (Element at index 58)
+    t =    97.52s Find the Button (Element at index 59)
+    t =    97.69s Find the Button (Element at index 60)
+    t =    97.86s Find the Button (Element at index 61)
+    t =    98.04s Find the Button (Element at index 62)
+    t =    98.21s Find the Button (Element at index 63)
+    t =    98.39s Find the Button (Element at index 64)
+    t =    98.57s Find the Button (Element at index 65)
+    t =    98.74s Find the Button (Element at index 66)
+    t =    98.93s Find the Button (Element at index 67)
+    t =    99.11s Find the Button (Element at index 68)
+    t =    99.29s Find the Button (Element at index 69)
+    t =    99.53s Find the Button (Element at index 70)
+    t =    99.72s Find the Button (Element at index 71)
+    t =    99.92s Find the Button (Element at index 72)
+    t =   100.11s Find the Button (Element at index 73)
+    t =   100.30s Find the Button (Element at index 74)
+    t =   100.53s Find the Button (Element at index 75)
+    t =   100.73s Find the Button (Element at index 76)
+    t =   100.93s Find the Button (Element at index 77)
+    t =   101.12s Find the Button (Element at index 78)
+    t =   101.31s Find the Button (Element at index 79)
+    t =   101.50s Find the Button (Element at index 80)
+    t =   101.69s Find the Button (Element at index 81)
+    t =   101.88s Find the Button (Element at index 82)
+    t =   102.07s Find the Button (Element at index 83)
+    t =   102.27s Find the Button (Element at index 84)
+    t =   102.47s Find the Button (Element at index 85)
+    t =   102.66s Find the Button (Element at index 86)
+    t =   102.86s Find the Button (Element at index 87)
+    t =   103.05s Find the Button (Element at index 88)
+    t =   103.24s Find the Button (Element at index 89)
+    t =   103.45s Find the Button (Element at index 90)
+    t =   103.66s Find the Button (Element at index 91)
+    t =   103.86s Find the Button (Element at index 92)
+    t =   104.07s Find the Button (Element at index 93)
+    t =   104.28s Find the Button (Element at index 94)
+    t =   104.48s Find the Button (Element at index 95)
+    t =   104.70s Find the Button (Element at index 96)
+    t =   104.91s Find the Button (Element at index 97)
+    t =   105.13s Find the Button (Element at index 98)
+    t =   105.35s Find the Button (Element at index 99)
+    t =   105.56s Find the Button (Element at index 100)
+    t =   105.88s Find the Button (Element at index 101)
+    t =   106.29s Find the Button (Element at index 102)
+    t =   106.71s Find the Button (Element at index 103)
+    t =   107.04s Find the Button (Element at index 104)
+    t =   107.27s Find the Button (Element at index 105)
+    t =   107.55s Find the Button (Element at index 106)
+    t =   107.77s Find the Button (Element at index 107)
+    t =   108.16s Find the Button (Element at index 108)
+    t =   108.39s Find the Button (Element at index 109)
+    t =   108.63s Find the Button (Element at index 110)
+    t =   108.86s Find the Button (Element at index 111)
+    t =   109.09s Find the Button (Element at index 112)
+    t =   109.31s Find the Button (Element at index 113)
+    t =   109.54s Find the Button (Element at index 114)
+    t =   109.77s Find the Button (Element at index 115)
+    t =   110.00s Find the Button (Element at index 116)
+    t =   110.23s Find the Button (Element at index 117)
+    t =   110.46s Find the Button (Element at index 118)
+    t =   110.68s Find the Button (Element at index 119)
+    t =   110.91s Find the Button (Element at index 120)
+    t =   111.14s Find the Button (Element at index 121)
+    t =   111.37s Find the Button (Element at index 122)
+    t =   111.60s Find the Button (Element at index 123)
+    t =   111.82s Find the Button (Element at index 124)
+    t =   112.05s Find the Button (Element at index 125)
+    t =   112.28s Find the Button (Element at index 126)
+    t =   112.51s Find the Button (Element at index 127)
+    t =   112.74s Find the Button (Element at index 128)
+    t =   112.97s Find the Button (Element at index 129)
+    t =   113.21s Find the Button (Element at index 130)
+    t =   113.44s Find the Button (Element at index 131)
+    t =   113.68s Find the Button (Element at index 132)
+    t =   113.91s Find the Button (Element at index 133)
+    t =   114.15s Find the Button (Element at index 134)
+    t =   114.39s Find the Button (Element at index 135)
+    t =   114.63s Find the Button (Element at index 136)
+    t =   114.87s Find the Button (Element at index 137)
+    t =   115.11s Find the Button (Element at index 138)
+    t =   115.35s Find the Button (Element at index 139)
+    t =   115.60s Find the Button (Element at index 140)
+    t =   115.85s Find the Button (Element at index 141)
+    t =   116.10s Find the Button (Element at index 142)
+    t =   116.33s Find the Button (Element at index 143)
+    t =   116.58s Find the Button (Element at index 144)
+    t =   116.83s Find the Button (Element at index 145)
+    t =   117.08s Find the Button (Element at index 146)
+    t =   117.32s Find the Button (Element at index 147)
+    t =   117.57s Find the Button (Element at index 148)
+    t =   117.81s Find the Button (Element at index 149)
+    t =   118.06s Find the Button (Element at index 150)
+    t =   118.31s Find the Button (Element at index 151)
+    t =   118.57s Find the Button (Element at index 152)
+    t =   118.81s Find the Button (Element at index 153)
+    t =   119.07s Find the Button (Element at index 154)
+    t =   119.32s Find the Button (Element at index 155)
+    t =   119.57s Find the Button (Element at index 156)
+    t =   119.83s Find the Button (Element at index 157)
+    t =   120.10s Find the Button (Element at index 158)
+    t =   120.43s Find the Button (Element at index 159)
+    t =   120.70s Find the Button (Element at index 160)
+    t =   120.96s Find the Button (Element at index 161)
+    t =   121.23s Find the Button (Element at index 162)
+    t =   121.49s Find the Button (Element at index 163)
+    t =   121.76s Find the Button (Element at index 164)
+    t =   122.02s Find the Button (Element at index 165)
+    t =   122.29s Find the Button (Element at index 166)
+    t =   122.59s Find the Button (Element at index 167)
+    t =   122.86s Find the Button (Element at index 168)
+    t =   123.17s Find the Button (Element at index 169)
+    t =   123.43s Find the Button (Element at index 170)
+    t =   123.69s Find the Button (Element at index 171)
+    t =   123.96s Find the Button (Element at index 172)
+    t =   124.23s Find the Button (Element at index 173)
+    t =   124.49s Find the Button (Element at index 174)
+    t =   124.75s Find the Button (Element at index 175)
+    t =   125.02s Find the Button (Element at index 176)
+    t =   125.28s Find the Button (Element at index 177)
+    t =   126.56s Checking `Expect predicate `hittable == 1` for object "Hidden word, ayah 3. Tap to reveal." Button`
+    t =   126.56s     Find the "Hidden word, ayah 3. Tap to reveal." Button
+    t =   126.72s Tap "Hidden word, ayah 3. Tap to reveal." Button[0.50, 0.50]
+    t =   126.72s     Wait for host.exp.Exponent to idle
+    t =   126.72s     Find the "Hidden word, ayah 3. Tap to reveal." Button
+    t =   126.85s     Check for interrupting elements affecting "Hidden word, ayah 3. Tap to reveal." Button
+    t =   126.96s     Synthesize event
+    t =   126.96s         Find the "Hidden word, ayah 3. Tap to reveal." Button
+    t =   127.08s         Find the "Hidden word, ayah 3. Tap to reveal." Button
+    t =   127.20s         Find the "Hidden word, ayah 3. Tap to reveal." Button
+    t =   127.61s     Wait for host.exp.Exponent to idle
+    t =   127.62s Get all elements bound by index for: Elements matching predicate 'label BEGINSWITH "Hidden word"'
+    t =   127.98s Find the Button (Element at index 0)
+    t =   128.11s Find the Button (Element at index 1)
+    t =   128.25s Find the Button (Element at index 2)
+    t =   128.38s Find the Button (Element at index 3)
+    t =   128.52s Find the Button (Element at index 4)
+    t =   128.65s Find the Button (Element at index 5)
+    t =   128.78s Find the Button (Element at index 6)
+    t =   128.92s Find the Button (Element at index 7)
+    t =   129.05s Find the Button (Element at index 8)
+    t =   129.19s Find the Button (Element at index 9)
+    t =   129.32s Find the Button (Element at index 10)
+    t =   129.65s Find the Button (Element at index 11)
+    t =   129.80s Find the Button (Element at index 12)
+    t =   129.95s Find the Button (Element at index 13)
+    t =   130.10s Find the Button (Element at index 14)
+    t =   130.27s Find the Button (Element at index 15)
+    t =   130.41s Find the Button (Element at index 16)
+    t =   130.56s Find the Button (Element at index 17)
+    t =   130.70s Find the Button (Element at index 18)
+    t =   130.84s Find the Button (Element at index 19)
+    t =   130.99s Find the Button (Element at index 20)
+    t =   131.14s Find the Button (Element at index 21)
+    t =   131.28s Find the Button (Element at index 22)
+    t =   131.43s Find the Button (Element at index 23)
+    t =   131.57s Find the Button (Element at index 24)
+    t =   131.72s Find the Button (Element at index 25)
+    t =   131.86s Find the Button (Element at index 26)
+    t =   132.00s Find the Button (Element at index 27)
+    t =   132.15s Find the Button (Element at index 28)
+    t =   132.30s Find the Button (Element at index 29)
+    t =   132.44s Find the Button (Element at index 30)
+    t =   132.59s Find the Button (Element at index 31)
+    t =   132.74s Find the Button (Element at index 32)
+    t =   132.89s Find the Button (Element at index 33)
+    t =   133.03s Find the Button (Element at index 34)
+    t =   133.18s Find the Button (Element at index 35)
+    t =   133.32s Find the Button (Element at index 36)
+    t =   133.47s Find the Button (Element at index 37)
+    t =   133.63s Find the Button (Element at index 38)
+    t =   133.78s Find the Button (Element at index 39)
+    t =   133.93s Find the Button (Element at index 40)
+    t =   134.08s Find the Button (Element at index 41)
+    t =   134.23s Find the Button (Element at index 42)
+    t =   134.38s Find the Button (Element at index 43)
+    t =   134.53s Find the Button (Element at index 44)
+    t =   134.68s Find the Button (Element at index 45)
+    t =   134.86s Find the Button (Element at index 46)
+    t =   135.02s Find the Button (Element at index 47)
+    t =   135.18s Find the Button (Element at index 48)
+    t =   135.34s Find the Button (Element at index 49)
+    t =   135.50s Find the Button (Element at index 50)
+    t =   135.77s Find the Button (Element at index 51)
+    t =   136.00s Find the Button (Element at index 52)
+    t =   136.17s Find the Button (Element at index 53)
+    t =   136.33s Find the Button (Element at index 54)
+    t =   136.49s Find the Button (Element at index 55)
+    t =   136.64s Find the Button (Element at index 56)
+    t =   136.81s Find the Button (Element at index 57)
+    t =   137.00s Find the Button (Element at index 58)
+    t =   137.18s Find the Button (Element at index 59)
+    t =   137.38s Find the Button (Element at index 60)
+    t =   137.57s Find the Button (Element at index 61)
+    t =   137.76s Find the Button (Element at index 62)
+    t =   137.95s Find the Button (Element at index 63)
+    t =   138.13s Find the Button (Element at index 64)
+    t =   138.31s Find the Button (Element at index 65)
+    t =   138.49s Find the Button (Element at index 66)
+    t =   138.67s Find the Button (Element at index 67)
+    t =   138.86s Find the Button (Element at index 68)
+    t =   139.05s Find the Button (Element at index 69)
+    t =   139.24s Find the Button (Element at index 70)
+    t =   139.44s Find the Button (Element at index 71)
+    t =   139.63s Find the Button (Element at index 72)
+    t =   139.82s Find the Button (Element at index 73)
+    t =   140.02s Find the Button (Element at index 74)
+    t =   140.20s Find the Button (Element at index 75)
+    t =   140.40s Find the Button (Element at index 76)
+    t =   140.59s Find the Button (Element at index 77)
+    t =   140.79s Find the Button (Element at index 78)
+    t =   141.00s Find the Button (Element at index 79)
+    t =   141.20s Find the Button (Element at index 80)
+    t =   141.41s Find the Button (Element at index 81)
+    t =   141.61s Find the Button (Element at index 82)
+    t =   141.82s Find the Button (Element at index 83)
+    t =   142.02s Find the Button (Element at index 84)
+    t =   142.23s Find the Button (Element at index 85)
+    t =   142.44s Find the Button (Element at index 86)
+    t =   142.64s Find the Button (Element at index 87)
+    t =   142.85s Find the Button (Element at index 88)
+    t =   143.04s Find the Button (Element at index 89)
+    t =   143.24s Find the Button (Element at index 90)
+    t =   143.43s Find the Button (Element at index 91)
+    t =   143.64s Find the Button (Element at index 92)
+    t =   143.85s Find the Button (Element at index 93)
+    t =   144.16s Find the Button (Element at index 94)
+    t =   144.38s Find the Button (Element at index 95)
+    t =   144.60s Find the Button (Element at index 96)
+    t =   144.81s Find the Button (Element at index 97)
+    t =   145.02s Find the Button (Element at index 98)
+    t =   145.23s Find the Button (Element at index 99)
+    t =   145.44s Find the Button (Element at index 100)
+    t =   145.64s Find the Button (Element at index 101)
+    t =   145.86s Find the Button (Element at index 102)
+    t =   146.07s Find the Button (Element at index 103)
+    t =   146.29s Find the Button (Element at index 104)
+    t =   146.50s Find the Button (Element at index 105)
+    t =   146.72s Find the Button (Element at index 106)
+    t =   146.94s Find the Button (Element at index 107)
+    t =   147.16s Find the Button (Element at index 108)
+    t =   147.38s Find the Button (Element at index 109)
+    t =   147.60s Find the Button (Element at index 110)
+    t =   147.84s Find the Button (Element at index 111)
+    t =   148.06s Find the Button (Element at index 112)
+    t =   148.29s Find the Button (Element at index 113)
+    t =   148.51s Find the Button (Element at index 114)
+    t =   148.73s Find the Button (Element at index 115)
+    t =   148.95s Find the Button (Element at index 116)
+    t =   149.16s Find the Button (Element at index 117)
+    t =   149.38s Find the Button (Element at index 118)
+    t =   149.59s Find the Button (Element at index 119)
+    t =   149.81s Find the Button (Element at index 120)
+    t =   150.03s Find the Button (Element at index 121)
+    t =   150.26s Find the Button (Element at index 122)
+    t =   150.49s Find the Button (Element at index 123)
+    t =   150.72s Find the Button (Element at index 124)
+    t =   150.96s Find the Button (Element at index 125)
+    t =   151.20s Find the Button (Element at index 126)
+    t =   151.44s Find the Button (Element at index 127)
+    t =   151.68s Find the Button (Element at index 128)
+    t =   151.93s Find the Button (Element at index 129)
+    t =   152.18s Find the Button (Element at index 130)
+    t =   152.42s Find the Button (Element at index 131)
+    t =   152.67s Find the Button (Element at index 132)
+    t =   152.90s Find the Button (Element at index 133)
+    t =   153.12s Find the Button (Element at index 134)
+    t =   153.36s Find the Button (Element at index 135)
+    t =   153.58s Find the Button (Element at index 136)
+    t =   153.81s Find the Button (Element at index 137)
+    t =   154.04s Find the Button (Element at index 138)
+    t =   154.27s Find the Button (Element at index 139)
+    t =   154.50s Find the Button (Element at index 140)
+    t =   154.73s Find the Button (Element at index 141)
+    t =   154.96s Find the Button (Element at index 142)
+    t =   155.20s Find the Button (Element at index 143)
+    t =   155.45s Find the Button (Element at index 144)
+    t =   155.70s Find the Button (Element at index 145)
+    t =   155.94s Find the Button (Element at index 146)
+    t =   156.17s Find the Button (Element at index 147)
+    t =   156.41s Find the Button (Element at index 148)
+    t =   156.65s Find the Button (Element at index 149)
+    t =   156.89s Find the Button (Element at index 150)
+    t =   157.13s Find the Button (Element at index 151)
+    t =   157.37s Find the Button (Element at index 152)
+    t =   157.61s Find the Button (Element at index 153)
+    t =   157.85s Find the Button (Element at index 154)
+    t =   158.10s Find the Button (Element at index 155)
+    t =   158.34s Find the Button (Element at index 156)
+    t =   158.60s Find the Button (Element at index 157)
+    t =   158.86s Find the Button (Element at index 158)
+    t =   159.11s Find the Button (Element at index 159)
+    t =   159.37s Find the Button (Element at index 160)
+    t =   159.62s Find the Button (Element at index 161)
+    t =   159.87s Find the Button (Element at index 162)
+    t =   160.13s Find the Button (Element at index 163)
+    t =   160.39s Find the Button (Element at index 164)
+    t =   160.64s Find the Button (Element at index 165)
+    t =   160.90s Find the Button (Element at index 166)
+    t =   161.15s Find the Button (Element at index 167)
+    t =   161.41s Find the Button (Element at index 168)
+    t =   161.68s Find the Button (Element at index 169)
+    t =   161.95s Find the Button (Element at index 170)
+    t =   162.21s Find the Button (Element at index 171)
+    t =   162.47s Find the Button (Element at index 172)
+    t =   162.73s Find the Button (Element at index 173)
+    t =   163.00s Find the Button (Element at index 174)
+    t =   163.27s Find the Button (Element at index 175)
+    t =   163.54s Find the Button (Element at index 176)
+    t =   164.83s Checking `Expect predicate `hittable == 1` for object "Recitation settings" Button`
+    t =   164.84s     Find the "Recitation settings" Button
+    t =   164.99s Tap "Recitation settings" Button[0.50, 0.50]
+    t =   164.99s     Wait for host.exp.Exponent to idle
+    t =   165.00s     Find the "Recitation settings" Button
+    t =   165.14s     Check for interrupting elements affecting "Recitation settings" Button
+    t =   165.28s     Synthesize event
+    t =   165.28s         Find the "Recitation settings" Button
+    t =   165.42s         Find the "Recitation settings" Button
+    t =   165.55s         Find the "Recitation settings" Button
+    t =   166.00s     Wait for host.exp.Exponent to idle
+    t =   166.52s Waiting 10.0s for "Teacher’s voice" StaticText to exist
+    t =   167.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Teacher’s voice" StaticText`
+    t =   167.53s         Checking existence of `"Teacher’s voice" StaticText`
+    t =   167.67s Find the Application 'host.exp.Exponent'
+    t =   167.91s Added attachment named 'settings'
+    t =   168.91s Checking `Expect predicate `hittable == 1` for object "Close" Button`
+    t =   168.91s     Find the "Close" Button
+    t =   169.09s Tap "Close" Button[0.50, 0.50]
+    t =   169.09s     Wait for host.exp.Exponent to idle
+    t =   169.09s     Find the "Close" Button
+    t =   169.23s     Check for interrupting elements affecting "Close" Button
+    t =   169.35s     Synthesize event
+    t =   169.35s         Find the "Close" Button
+    t =   169.49s         Find the "Close" Button
+    t =   169.64s         Find the "Close" Button
+    t =   170.07s     Wait for host.exp.Exponent to idle
+    t =   170.52s Tear Down
+Test Case '-[ReaderTests.ReaderTests testReader]' passed (170.777 seconds).
+Test Suite 'ReaderTests' passed at 2026-10-21 18:43:35.194.
+	 Executed 1 test, with 0 failures (0 unexpected) in 170.777 (170.801) seconds
+Test Suite 'ReaderTests.xctest' passed at 2026-10-21 18:43:35.201.
+	 Executed 1 test, with 0 failures (0 unexpected) in 170.777 (170.808) seconds
+Test Suite 'All tests' passed at 2026-10-21 18:43:35.202.
+	 Executed 1 test, with 0 failures (0 unexpected) in 170.777 (170.818) seconds
+2026-10-21 18:43:35.480 xcodebuild[46333:132115] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-21 18:43:35.493 xcodebuild[46333:132115] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-21 18:43:35.506 xcodebuild[46333:132115] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-21 18:43:35.784 xcodebuild[46333:132115] [MT] IDETestOperationsObserverDebug: 181.904 elapsed -- Testing started completed.
+2026-10-21 18:43:35.784 xcodebuild[46333:132115] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-21 18:43:35.784 xcodebuild[46333:132115] [MT] IDETestOperationsObserverDebug: 181.904 sec, +181.904 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/quran-ios27-ui/reader-final.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

@@ -18,4 +18,5 @@ yarn-error.log*
 
 # OS
 .DS_Store
+.compat-backup/
 Thumbs.db

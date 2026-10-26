@@ -1,0 +1,11 @@
+vendor/
+research/
+models/
+build-*/
+*.xcodeproj/
+DerivedData/
+evidence/*.xcresult/
+evidence/*.log
+expo-module/ios/Core/
+expo-module/ios/Resources/
+expo-module/ios/Whisper.xcframework

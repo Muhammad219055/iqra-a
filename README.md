@@ -1,47 +1,127 @@
-# Quran Recitation & Memorization Tutor (Local-First)
+# Iqra'a (اقرأ)
 
-An independent, 100% free, local-first Quran recitation and memorization tutor inspired by Tarteel. Built with open-source models and datasets, running entirely on Apple Silicon with zero cloud inference costs.
+A free Quran recitation tutor that runs entirely on the phone. It listens while you recite, follows your place word by word, and flags skipped, repeated and wrong words, playing the reciter's own recording of the word you missed. No server, no account, no audio leaves the device.
 
----
+> **AI notice.** Iqra'a uses AI models that make mistakes. It is an aid only and must not be relied upon. It is not a replacement for a proficient, authorized teacher: the Quran is received through oral transmission (mushafahah).
 
-## Features
-- **Local Speech Recognition (ASR):** Powered by `tarteel-ai/whisper-base-ar-quran` (Apache 2.0) running on Apple Silicon Metal Performance Shaders (`mps`).
-- **Word-Level Sequence Alignment:** Levenshtein DP aligner detecting `MATCH`, `MISSED_WORDS`, `INCORRECT_WORDS`, `EXTRA_WORDS`.
-- **Teacher Prompting (Headline Feature):** When you make a mistake or hesitate for $>2.5$ seconds, the app plays the correct next 2–3 words in a real Qari's voice (Mishari or Husary) and gates the microphone to prevent audio feedback.
-- **Authentic Madani Mushaf UI:** 15-line Medina layout rendered with canonical Uthmani script and real-time word highlighting.
-- **Memorization Mode:** Blurs upcoming words; tap to reveal with a `PEEKED_WORDS` counter.
-- **Session History:** Persisted locally in SQLite (`data/user_db.sqlite`).
+## Status (October 2026)
 
----
+| Area | State |
+| --- | --- |
+| Mushaf reader | 604-page 15-line Madinah layout rendered from QCF glyph fonts (no page images), memorization mode (tap to reveal) |
+| Listening | Continuous, on-device; Al-Fatihah only |
+| Word mistakes | Skipped, repeated, wrong words; spoken correction from Mishari or Husary |
+| Harakat / tajweed | Research: phoneme models trained, not yet in the app |
+| Platforms | iOS (iPhone, iOS 17+) |
 
-## Quick Start (Web Prototype on Mac)
+## How it works
 
-### 1. Launch the Local Server
-```bash
-cd /Users/muhammad/quran-tutor
-.venv/bin/python start.py
 ```
-Open **[http://127.0.0.1:8000](http://127.0.0.1:8000)** in Chrome or Safari.
-
-### 2. Run the Offline CLI (Milestone 1)
-```bash
-PYTHONPATH=. .venv/bin/python src/cli.py tests/audio/al_fatiha_full.wav --surah 1 --start-ayah 1 --end-ayah 7
-```
-
-### 3. Test Audio Prompt Slicing (Milestone 2)
-```bash
-PYTHONPATH=. .venv/bin/python src/prompt_cli.py --surah 1 --ayah 1 --word 1 --count 3 --reciter mishari --play
-```
-
-### 4. Run Automated Test Suite
-```bash
-PYTHONPATH=. .venv/bin/python tests/test_milestone_1.py
-PYTHONPATH=. .venv/bin/python tests/test_milestone_2.py
-PYTHONPATH=. .venv/bin/python tests/test_milestone_3_ws.py
-PYTHONPATH=. .venv/bin/python tests/test_milestone_4_db.py
+microphone ──► 16 kHz rolling buffer (12 s max)
+                 │  every ~0.4 s, one decode in flight, newest audio wins
+                 ▼
+          Silero VAD gate ──► whisper.cpp (fine-tuned Whisper, q8_0)
+                                   │ transcript
+                                   ▼
+                     ProgressTracker (alignment to the expected ayahs)
+                       provisional = latest hypothesis
+                       stable      = two agreeing hypotheses, or a pause
+                       mistake     = two agreeing hypotheses + two later words, or a pause
+                                   │
+                     ┌─────────────┴─────────────┐
+                     ▼                           ▼
+              reader highlights           local reciter prompt
+              (green / red)               (mic paused while it plays)
 ```
 
----
+- **Engine** (`on-device/Native/`): `MicrophoneCapture` + `RollingAudio` (capture), `QuranWhisper.mm` (whisper.cpp + Silero VAD, loop guard via temperature fallback), `ListeningSession` (loop, cancellation, prompts), `RecitationAlignment` (`ProgressTracker`, one-edit spelling tolerance for words of 4+ letters).
+- **Bridge**: `on-device/expo-module/` exposes the engine to React Native as the `QuranOffline` module.
+- **App**: `mobile/` (Expo SDK 58, React Native 0.88). `App.js` drives the session; `MushafReader.js` is the reader.
 
-## iOS Native Roadmap (Phase 2)
-See [`docs/IOS_IMPLEMENTATION_GUIDE.md`](docs/IOS_IMPLEMENTATION_GUIDE.md) for the complete Swift, CoreML, and AVAudioEngine implementation guide.
+## Models
+
+The app's word model is `tarteel-ai/whisper-base-ar-quran` fine-tuned to transcribe **verbatim**, so a learner's skipped or repeated word is written down instead of silently corrected.
+
+Results on about 600 clips from two professional reciters never seen in training:
+
+| Model | Word error rate | Starts mid-ayah, written exactly | Repeated word, written exactly |
+| --- | --- | --- | --- |
+| Original whisper-base-ar-quran | 0.39 | 15% | 8% |
+| v2 (spliced mistakes) | 0.17 | 30% | 61% |
+| **v3 stage 2 (shipped)** | **0.076** | **76%** | **69%** |
+
+On ordinary speakers (Kaggle Al-Fatihah recordings held out of training) word error rate fell from 0.40 to 0.27 once Tarteel's tlog recordings were added.
+
+| File | Size | Use |
+| --- | --- | --- |
+| v3 stage 2 base, q8_0 | 82 MB | default |
+| v3 tiny, q5_0 | 30 MB | older phones (WER 0.12) |
+
+Model weights are not in git. Place a GGML model at `on-device/models/` and point `on-device/expo-module/ios/Resources/ggml-model.bin` at it (see [on-device/README.md](on-device/README.md); `on-device/scripts/prepare-model.py` builds the original base model with pinned checksums).
+
+### Training
+
+Colab notebooks are generated by scripts in `on-device/training/`:
+
+| Script | Produces |
+| --- | --- |
+| `make_notebook.py` | `quran_verbatim_v3_colab.ipynb`: word model, three stages (spliced professional audio, real voices, tiny model) + GGML export and quantization |
+| `make_harakat_notebook.py` | `quran_harakat_colab.ipynb`: phoneme recognizer for harakat, scored on QuranMB.v2 |
+| `desktop-copies/harakat_teacher_student.py` | w2v-BERT 2.0 teacher distilled into a phone-sized student |
+
+Training data: quran.com verse-by-verse recitations and word timings (spliced into omissions, repetitions, similar-sounding substitutions, early stops, mid-ayah windows, silence), RetaSy learner recordings, the Kaggle Tarteel Al-Fatihah set, and Tarteel's tlog.
+
+### Harakat (research)
+
+Whisper normalizes harakat away, so harakat needs a phoneme model. A wav2vec2-base CTC model trained on IqraEval data reaches phoneme error rate 0.154 (dev) and, on QuranMB.v2's human-marked mistakes, F1 0.37 with forced-alignment confidence scoring. That is not yet reliable enough to show users; a larger teacher distilled into a phone-sized student is in progress.
+
+## Build and run (iOS)
+
+Requirements: Xcode 27+, CocoaPods, Node 20+, Python 3.12 with the project's `.venv`.
+
+```sh
+# engine + Expo module (from the repository root)
+python3 on-device/scripts/prepare-model.py
+python3 on-device/scripts/build-native.py --device
+python3 on-device/scripts/prepare-expo.py
+
+# app
+cd mobile && npm install
+cd ios && pod install
+xcodebuild -workspace QuranTutor.xcworkspace -scheme QuranTutor -configuration Release \
+  -destination 'id=<device udid>' DEVELOPMENT_TEAM=<team> CODE_SIGN_STYLE=Automatic -allowProvisioningUpdates build
+```
+
+The native module needs a development build; it does not run in Expo Go.
+
+## Tests
+
+```sh
+cd mobile && node scripts/check-reader.cjs                  # reader layout checks
+.venv/bin/python on-device/evaluation/check_scoring.py       # evaluation scoring
+# native engine (simulator, all audio muted): on-device/project.yml, scheme QuranOffline, target OfflineTests
+```
+
+Native tests never start the microphone or play audible sound.
+
+## Repository layout
+
+| Path | Contents |
+| --- | --- |
+| `mobile/` | Expo app: reader, settings, native module integration |
+| `on-device/Native/` | Swift / Objective-C++ listening engine |
+| `on-device/expo-module/` | Expo native module bridge |
+| `on-device/Tests/` | XCTest suites (muted) |
+| `on-device/evaluation/` | 68-clip Al-Fatihah evaluation (clips not in git) |
+| `on-device/training/` | Colab notebook generators and run scripts |
+| `docs/` | Handoffs, listening review, UI verification evidence |
+| `src/`, `web/`, `ios/`, `tests/` | Earlier Python/web prototype and Swift prototype ([legacy README](docs/LEGACY_PROTOTYPE_README.md)) |
+
+## Credits and licenses
+
+- [tarteel-ai/whisper-base-ar-quran](https://huggingface.co/tarteel-ai/whisper-base-ar-quran), [whisper-tiny-ar-quran](https://huggingface.co/tarteel-ai/whisper-tiny-ar-quran): Apache-2.0.
+- [tarteel-ai/tlog](https://huggingface.co/datasets/tarteel-ai/tlog): Tarteel AI, CC-BY-4.0.
+- [RetaSy/quranic_audio_dataset](https://huggingface.co/datasets/RetaSy/quranic_audio_dataset); [Kaggle Tarteel-Dataset-v1-Alfatiha](https://www.kaggle.com/datasets/haithamalhaji/tarteeldatasetv1alfatiha).
+- [quran.com](https://quran.com) API: text, recitations and word timings; QCF Madinah fonts from the Quran.com CDN.
+- [IqraEval](https://huggingface.co/IqraEval) (ArabicNLP 2025 shared task) data; [facebook/wav2vec2-base](https://huggingface.co/facebook/wav2vec2-base), [facebook/w2v-bert-2.0](https://huggingface.co/facebook/w2v-bert-2.0).
+- [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) and Silero VAD.

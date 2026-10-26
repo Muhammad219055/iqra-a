@@ -1,0 +1,56 @@
+name: QuranOffline
+options:
+  bundleIdPrefix: com.local.quranoffline
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: '16.4'
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    SWIFT_VERSION: '5.0'
+    CODE_SIGNING_ALLOWED: NO
+    CLANG_CXX_LANGUAGE_STANDARD: c++17
+    HEADER_SEARCH_PATHS:
+      - $(SRCROOT)/vendor/whisper.cpp/include
+      - $(SRCROOT)/vendor/whisper.cpp/ggml/include
+targets:
+  QuranOffline:
+    type: application
+    platform: iOS
+    sources:
+      - path: Native
+      - path: models/ggml-model.bin
+        buildPhase: resources
+      - path: models/ggml-silero-v6.2.0.bin
+        buildPhase: resources
+      - path: ../tests/audio/ayah_1_clean.wav
+        buildPhase: resources
+      - path: ../tests/audio/ayah_1_skipped_word3.wav
+        buildPhase: resources
+      - path: ../data/text/quran_surah_1.json
+        buildPhase: resources
+      - path: ../ios/QuranTutor/Resources/surah_1_mishari.json
+        buildPhase: resources
+      - path: ../data/audio_cache/mishari/001_16k.wav
+        buildPhase: resources
+    settings:
+      base:
+        SWIFT_OBJC_BRIDGING_HEADER: Native/Bridge.h
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Recite Quran for recognition entirely on this device. Your microphone audio is not uploaded or saved.
+        OTHER_LDFLAGS: ['$(inherited)', '-lquran-whisper', '-lc++', '-framework', Accelerate]
+        'LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]': $(SRCROOT)/build-simulator
+        'LIBRARY_SEARCH_PATHS[sdk=iphoneos*]': $(SRCROOT)/build-device
+  OfflineTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: QuranOffline
+schemes:
+  QuranOffline:
+    build:
+      targets:
+        QuranOffline: all
+        OfflineTests: [test]
+    test:
+      targets: [OfflineTests]

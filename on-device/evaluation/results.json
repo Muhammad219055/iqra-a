@@ -1,0 +1,2389 @@
+{
+ "run": {
+  "command_template": [
+   "on-device/build-mac/bin/whisper-cli",
+   "-m",
+   "on-device/models/ggml-model.bin",
+   "-f",
+   "<clip>",
+   "-l",
+   "ar",
+   "-t",
+   "4",
+   "-bs",
+   "1",
+   "-bo",
+   "1",
+   "-nf",
+   "-nt",
+   "-np",
+   "-ng",
+   "-oj",
+   "-of",
+   "<prefix>"
+  ],
+  "model": {
+   "model": "tarteel-ai/whisper-base-ar-quran",
+   "revision": "5c3c53fdf9272c4f6ee0bee09a1e5a4a615ee25c",
+   "format": "ggml-f16",
+   "bytes": 147951465,
+   "sha256": "aaebca10e2a65a6dda073a6b3ac59900f91887628acf872c565a0198ee850ead",
+   "engine_commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037"
+  },
+  "model_sha256_verified": "aaebca10e2a65a6dda073a6b3ac59900f91887628acf872c565a0198ee850ead",
+  "platform": "Mac CLI: macOS-27.0.1-arm64-arm-64bit · Apple M2 Pro",
+  "timing_note": "Wall-clock per CLI process, including model load. Mac CLI only, not iPhone performance.",
+  "manifest_entries": 70,
+  "completed": 70,
+  "failed": []
+ },
+ "results": [
+  {
+   "id": "mishari_a1_original",
+   "exit_code": 0,
+   "wall_seconds": 0.36,
+   "real_time_factor": 0.061,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a1_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.322,
+   "real_time_factor": 0.064,
+   "status": "ok",
+   "text": "بِسْمِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a1_omit_w3",
+   "exit_code": 0,
+   "wall_seconds": 0.305,
+   "real_time_factor": 0.064,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a1_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.334,
+   "real_time_factor": 0.05,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 5,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.25
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a1_stop_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.287,
+   "real_time_factor": 0.204,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ",
+   "normalized": [
+    "بسم",
+    "الله"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "mishari_a2_original",
+   "exit_code": 0,
+   "wall_seconds": 0.33,
+   "real_time_factor": 0.058,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a2_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.327,
+   "real_time_factor": 0.068,
+   "status": "ok",
+   "text": "الْحَمْدُ لِرَبِّ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لرب",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 1,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "verdict": "misrecognized"
+   }
+  },
+  {
+   "id": "mishari_a2_omit_w3",
+   "exit_code": 0,
+   "wall_seconds": 0.317,
+   "real_time_factor": 0.063,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a2_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.346,
+   "real_time_factor": 0.053,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ لِلَّهِ رَبِّ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 5,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.25
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a2_stop_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.295,
+   "real_time_factor": 0.154,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ",
+   "normalized": [
+    "الحمد",
+    "لله"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "mishari_a3_original",
+   "exit_code": 0,
+   "wall_seconds": 0.309,
+   "real_time_factor": 0.066,
+   "status": "ok",
+   "text": "الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a3_repeat_w1",
+   "exit_code": 0,
+   "wall_seconds": 0.331,
+   "real_time_factor": 0.056,
+   "status": "ok",
+   "text": "الرَّحْمَنُ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "الرحمن",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.5
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a4_original",
+   "exit_code": 0,
+   "wall_seconds": 0.314,
+   "real_time_factor": 0.067,
+   "status": "ok",
+   "text": "مَالِكِ يَوْمِ الدِّينِ",
+   "normalized": [
+    "مالك",
+    "يوم",
+    "الدين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a4_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.329,
+   "real_time_factor": 0.08,
+   "status": "ok",
+   "text": "مَالِكِ الدِّينِ",
+   "normalized": [
+    "مالك",
+    "الدين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a4_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.521,
+   "real_time_factor": 0.098,
+   "status": "ok",
+   "text": "مَالِكِ يَوْمِ يَوْمِ الدِّينِ",
+   "normalized": [
+    "مالك",
+    "يوم",
+    "يوم",
+    "الدين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.3333333333333333
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a4_stop_w1",
+   "exit_code": 0,
+   "wall_seconds": 0.302,
+   "real_time_factor": 0.343,
+   "status": "ok",
+   "text": "مَالِكِينَ",
+   "normalized": [
+    "مالكين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 1.0
+    },
+    "vs_canonical": {
+     "match": 0,
+     "sub": 1,
+     "del": 2,
+     "ins": 0,
+     "wer": 1.0
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "mishari_a5_original",
+   "exit_code": 0,
+   "wall_seconds": 0.469,
+   "real_time_factor": 0.069,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+   "normalized": [
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a5_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.376,
+   "real_time_factor": 0.063,
+   "status": "ok",
+   "text": "إِيَّاكَ وَإِيَّاكَ نَسْتَعِينَ",
+   "normalized": [
+    "اياك",
+    "واياك",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a5_omit_w3",
+   "exit_code": 0,
+   "wall_seconds": 0.419,
+   "real_time_factor": 0.075,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ نَسْتَعِينَ",
+   "normalized": [
+    "اياك",
+    "نعبد",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a5_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.488,
+   "real_time_factor": 0.065,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+   "normalized": [
+    "اياك",
+    "نعبد",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 5,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.25
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a5_stop_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.305,
+   "real_time_factor": 0.168,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ",
+   "normalized": [
+    "اياك",
+    "نعبد"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "mishari_a6_original",
+   "exit_code": 0,
+   "wall_seconds": 0.324,
+   "real_time_factor": 0.057,
+   "status": "ok",
+   "text": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+   "normalized": [
+    "اهدنا",
+    "الصراط",
+    "المستقيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a6_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.299,
+   "real_time_factor": 0.063,
+   "status": "ok",
+   "text": "اهْدِنَا الْمُسْتَقِيمَ",
+   "normalized": [
+    "اهدنا",
+    "المستقيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a6_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.333,
+   "real_time_factor": 0.051,
+   "status": "ok",
+   "text": "اهْدِنَا الصِّرَاطَ الصِّرَاطَ الْمُسْتَقِيمَ",
+   "normalized": [
+    "اهدنا",
+    "الصراط",
+    "الصراط",
+    "المستقيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.3333333333333333
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a6_stop_w1",
+   "exit_code": 0,
+   "wall_seconds": 0.277,
+   "real_time_factor": 0.346,
+   "status": "ok",
+   "text": "اهْدِنَا",
+   "normalized": [
+    "اهدنا"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 1,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 1,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.6666666666666666
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "mishari_a7_original",
+   "exit_code": 0,
+   "wall_seconds": 0.425,
+   "real_time_factor": 0.032,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "mishari_a7_omit_w5",
+   "exit_code": 0,
+   "wall_seconds": 0.414,
+   "real_time_factor": 0.033,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 8,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 8,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.1111111111111111
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_a7_omit_w8",
+   "exit_code": 0,
+   "wall_seconds": 0.42,
+   "real_time_factor": 0.032,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ لَلضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "للضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 7,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.125
+    },
+    "vs_canonical": {
+     "match": 7,
+     "sub": 1,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.2222222222222222
+    },
+    "verdict": "misrecognized"
+   }
+  },
+  {
+   "id": "mishari_a7_repeat_w5",
+   "exit_code": 0,
+   "wall_seconds": 0.426,
+   "real_time_factor": 0.031,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 9,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.1
+    },
+    "vs_canonical": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 1
+    },
+    "verdict": "silently_repaired"
+   }
+  },
+  {
+   "id": "mishari_a7_stop_w4",
+   "exit_code": 0,
+   "wall_seconds": 0.331,
+   "real_time_factor": 0.09,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 5,
+     "ins": 0,
+     "wer": 0.5555555555555556
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "mishari_a7_repeat_w2-3",
+   "exit_code": 0,
+   "wall_seconds": 0.491,
+   "real_time_factor": 0.032,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 11,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 2,
+     "wer": 0.2222222222222222
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "mishari_full_surah",
+   "exit_code": 0,
+   "wall_seconds": 0.982,
+   "real_time_factor": 0.021,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الرَّحْمَنِ الرَّحِيمِ مَالِكِ يَوْمِ الدِّينِ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ إِهْدِنَ الصِّرَاطَ الْمُسْتَعِينَ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين",
+    "الرحمن",
+    "الرحيم",
+    "مالك",
+    "يوم",
+    "الدين",
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين",
+    "اهدن",
+    "الصراط",
+    "المستعين",
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 23,
+     "sub": 2,
+     "del": 4,
+     "ins": 0,
+     "wer": 0.20689655172413793
+    },
+    "vs_canonical": {
+     "match": 23,
+     "sub": 2,
+     "del": 4,
+     "ins": 0,
+     "wer": 0.20689655172413793
+    },
+    "verdict": "false_correction"
+   }
+  },
+  {
+   "id": "husary_a1_original",
+   "exit_code": 0,
+   "wall_seconds": 0.321,
+   "real_time_factor": 0.066,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a1_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.309,
+   "real_time_factor": 0.076,
+   "status": "ok",
+   "text": "بِسْمِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a1_omit_w3",
+   "exit_code": 0,
+   "wall_seconds": 0.299,
+   "real_time_factor": 0.078,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a1_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.322,
+   "real_time_factor": 0.057,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.2
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 1
+    },
+    "verdict": "silently_repaired"
+   }
+  },
+  {
+   "id": "husary_a1_stop_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.284,
+   "real_time_factor": 0.211,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ",
+   "normalized": [
+    "بسم",
+    "الله"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "husary_a2_original",
+   "exit_code": 0,
+   "wall_seconds": 0.331,
+   "real_time_factor": 0.061,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a2_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.338,
+   "real_time_factor": 0.075,
+   "status": "ok",
+   "text": "الْحَمْدُ رَبِّ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "رب",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a2_omit_w3",
+   "exit_code": 0,
+   "wall_seconds": 0.324,
+   "real_time_factor": 0.067,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a2_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.328,
+   "real_time_factor": 0.052,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.2
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 1
+    },
+    "verdict": "silently_repaired"
+   }
+  },
+  {
+   "id": "husary_a2_stop_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.305,
+   "real_time_factor": 0.127,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ",
+   "normalized": [
+    "الحمد",
+    "لله"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "husary_a3_original",
+   "exit_code": 0,
+   "wall_seconds": 0.311,
+   "real_time_factor": 0.079,
+   "status": "ok",
+   "text": "الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a3_repeat_w1",
+   "exit_code": 0,
+   "wall_seconds": 0.359,
+   "real_time_factor": 0.067,
+   "status": "ok",
+   "text": "الرَّحْمَنِ وَالرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "الرحمن",
+    "والرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.5
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 1
+    },
+    "verdict": "extra_word_inexact"
+   }
+  },
+  {
+   "id": "husary_a4_original",
+   "exit_code": 0,
+   "wall_seconds": 0.301,
+   "real_time_factor": 0.079,
+   "status": "ok",
+   "text": "مَالِكِ يَوْمِ الدِّينِ",
+   "normalized": [
+    "مالك",
+    "يوم",
+    "الدين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a4_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.287,
+   "real_time_factor": 0.091,
+   "status": "ok",
+   "text": "مَالِكِ الدِّينِ",
+   "normalized": [
+    "مالك",
+    "الدين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a4_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.314,
+   "real_time_factor": 0.071,
+   "status": "ok",
+   "text": "مَالِكِ يَوْمِ يَوْمِ الدِّينِ",
+   "normalized": [
+    "مالك",
+    "يوم",
+    "يوم",
+    "الدين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.3333333333333333
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a4_stop_w1",
+   "exit_code": 0,
+   "wall_seconds": 0.281,
+   "real_time_factor": 0.253,
+   "status": "ok",
+   "text": "مَالِكِينَ",
+   "normalized": [
+    "مالكين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 1.0
+    },
+    "vs_canonical": {
+     "match": 0,
+     "sub": 1,
+     "del": 2,
+     "ins": 0,
+     "wer": 1.0
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "husary_a5_original",
+   "exit_code": 0,
+   "wall_seconds": 0.336,
+   "real_time_factor": 0.055,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+   "normalized": [
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a5_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.305,
+   "real_time_factor": 0.059,
+   "status": "ok",
+   "text": "إِيَّاكَ نَسْتَعِينَ",
+   "normalized": [
+    "اياك",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a5_omit_w3",
+   "exit_code": 0,
+   "wall_seconds": 0.319,
+   "real_time_factor": 0.067,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُونَ السَّعِيرَ",
+   "normalized": [
+    "اياك",
+    "نعبدون",
+    "السعير"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 1,
+     "sub": 2,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.6666666666666666
+    },
+    "vs_canonical": {
+     "match": 1,
+     "sub": 2,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.75
+    },
+    "verdict": "misrecognized"
+   }
+  },
+  {
+   "id": "husary_a5_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.361,
+   "real_time_factor": 0.052,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ وَنَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+   "normalized": [
+    "اياك",
+    "نعبد",
+    "ونعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.2
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.25
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 1
+    },
+    "verdict": "extra_word_inexact"
+   }
+  },
+  {
+   "id": "husary_a5_stop_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.291,
+   "real_time_factor": 0.124,
+   "status": "ok",
+   "text": "إِيَّاكَ نَعْبُدُ",
+   "normalized": [
+    "اياك",
+    "نعبد"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 2,
+     "ins": 0,
+     "wer": 0.5
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "husary_a6_original",
+   "exit_code": 0,
+   "wall_seconds": 0.313,
+   "real_time_factor": 0.064,
+   "status": "ok",
+   "text": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+   "normalized": [
+    "اهدنا",
+    "الصراط",
+    "المستقيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a6_omit_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.298,
+   "real_time_factor": 0.077,
+   "status": "ok",
+   "text": "اهْدِنَا الْمُسْتَقِيمَ",
+   "normalized": [
+    "اهدنا",
+    "المستقيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 2,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 2,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.3333333333333333
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a6_repeat_w2",
+   "exit_code": 0,
+   "wall_seconds": 0.332,
+   "real_time_factor": 0.057,
+   "status": "ok",
+   "text": "اهْدِنَا الصِّرَاطَ الصِّرَاطَ الْمُسْتَقِيمَ",
+   "normalized": [
+    "اهدنا",
+    "الصراط",
+    "الصراط",
+    "المستقيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.3333333333333333
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a6_stop_w1",
+   "exit_code": 0,
+   "wall_seconds": 0.274,
+   "real_time_factor": 0.285,
+   "status": "ok",
+   "text": "اهْدِنَةٌ",
+   "normalized": [
+    "اهدنه"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 1.0
+    },
+    "vs_canonical": {
+     "match": 0,
+     "sub": 1,
+     "del": 2,
+     "ins": 0,
+     "wer": 1.0
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "husary_a7_original",
+   "exit_code": 0,
+   "wall_seconds": 0.418,
+   "real_time_factor": 0.03,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "husary_a7_omit_w5",
+   "exit_code": 0,
+   "wall_seconds": 0.408,
+   "real_time_factor": 0.031,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 8,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 8,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.1111111111111111
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a7_omit_w8",
+   "exit_code": 0,
+   "wall_seconds": 0.494,
+   "real_time_factor": 0.036,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَالضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "والضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 7,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.125
+    },
+    "vs_canonical": {
+     "match": 7,
+     "sub": 1,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.2222222222222222
+    },
+    "verdict": "misrecognized"
+   }
+  },
+  {
+   "id": "husary_a7_repeat_w5",
+   "exit_code": 0,
+   "wall_seconds": 0.502,
+   "real_time_factor": 0.034,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 10,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 0.1111111111111111
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 2
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "husary_a7_stop_w4",
+   "exit_code": 0,
+   "wall_seconds": 0.398,
+   "real_time_factor": 0.092,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 5,
+     "ins": 0,
+     "wer": 0.5555555555555556
+    },
+    "completed_tail_words": 0,
+    "verdict": "stopped_correctly"
+   }
+  },
+  {
+   "id": "husary_a7_repeat_w2-3",
+   "exit_code": 0,
+   "wall_seconds": 0.515,
+   "real_time_factor": 0.032,
+   "status": "ok",
+   "text": "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "علذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 10,
+     "sub": 1,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.09090909090909091
+    },
+    "vs_canonical": {
+     "match": 9,
+     "sub": 0,
+     "del": 0,
+     "ins": 2,
+     "wer": 0.2222222222222222
+    },
+    "repeat_occurrences": {
+     "audible": 2,
+     "transcribed": 1
+    },
+    "verdict": "extra_word_inexact"
+   }
+  },
+  {
+   "id": "husary_full_surah",
+   "exit_code": 0,
+   "wall_seconds": 1.009,
+   "real_time_factor": 0.021,
+   "status": "ok",
+   "text": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ الرَّحْمَنِ الرَّحِيمِ مَالِكِ يَوْمِ الدِّينِ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ إِهْدِنَ الصِّرَاطَ الْمُسْتَعِينَ ُسْتَقِيمَ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+   "normalized": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين",
+    "الرحمن",
+    "الرحيم",
+    "مالك",
+    "يوم",
+    "الدين",
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين",
+    "اهدن",
+    "الصراط",
+    "المستعين",
+    "ستقيم",
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 23,
+     "sub": 2,
+     "del": 4,
+     "ins": 1,
+     "wer": 0.2413793103448276
+    },
+    "vs_canonical": {
+     "match": 23,
+     "sub": 2,
+     "del": 4,
+     "ins": 1,
+     "wer": 0.2413793103448276
+    },
+    "verdict": "false_correction"
+   }
+  },
+  {
+   "id": "fixture_ayah_1_clean",
+   "exit_code": 0,
+   "wall_seconds": 0.365,
+   "real_time_factor": 0.06,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 4,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "verdict": "exact"
+   }
+  },
+  {
+   "id": "fixture_ayah_1_skipped_word3",
+   "exit_code": 0,
+   "wall_seconds": 0.31,
+   "real_time_factor": 0.062,
+   "status": "ok",
+   "text": "بِسْمِ اللَّهِ الرَّحِيمِ",
+   "normalized": [
+    "بسم",
+    "الله",
+    "الرحيم"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 3,
+     "sub": 0,
+     "del": 0,
+     "ins": 0,
+     "wer": 0.0
+    },
+    "vs_canonical": {
+     "match": 3,
+     "sub": 0,
+     "del": 1,
+     "ins": 0,
+     "wer": 0.25
+    },
+    "verdict": "detected"
+   }
+  },
+  {
+   "id": "digital_silence_2s",
+   "exit_code": 0,
+   "wall_seconds": 0.358,
+   "real_time_factor": 0.179,
+   "status": "ok",
+   "text": "وَالْمُؤْمِنِينَ",
+   "normalized": [
+    "والمومنين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 1.0
+    },
+    "verdict": "hallucinated"
+   }
+  },
+  {
+   "id": "digital_silence_8s",
+   "exit_code": 0,
+   "wall_seconds": 0.293,
+   "real_time_factor": 0.037,
+   "status": "ok",
+   "text": "وَالْمُؤْمِنِينَ",
+   "normalized": [
+    "والمومنين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 1.0
+    },
+    "verdict": "hallucinated"
+   }
+  },
+  {
+   "id": "noise_minus50dbfs_5s",
+   "exit_code": 0,
+   "wall_seconds": 0.306,
+   "real_time_factor": 0.061,
+   "status": "ok",
+   "text": "وَالْمُؤْمِنِينَ",
+   "normalized": [
+    "والمومنين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 1.0
+    },
+    "verdict": "hallucinated"
+   }
+  },
+  {
+   "id": "noise_minus40dbfs_5s",
+   "exit_code": 0,
+   "wall_seconds": 0.301,
+   "real_time_factor": 0.06,
+   "status": "ok",
+   "text": "وَالْمُؤْمِنِينَ",
+   "normalized": [
+    "والمومنين"
+   ],
+   "score": {
+    "vs_audible": {
+     "match": 0,
+     "sub": 0,
+     "del": 0,
+     "ins": 1,
+     "wer": 1.0
+    },
+    "verdict": "hallucinated"
+   }
+  }
+ ],
+ "summary": {
+  "omission · husary · synthetic": {
+   "clips": 10,
+   "verdicts": {
+    "detected": 8,
+    "misrecognized": 2
+   },
+   "audible_words": 38,
+   "word_errors": 4,
+   "wer_vs_audible": 0.105,
+   "mac_cli_rtf_median": 0.075
+  },
+  "omission · mishari · synthetic": {
+   "clips": 11,
+   "verdicts": {
+    "detected": 9,
+    "misrecognized": 2
+   },
+   "audible_words": 41,
+   "word_errors": 2,
+   "wer_vs_audible": 0.049,
+   "mac_cli_rtf_median": 0.063
+  },
+  "original · husary · original": {
+   "clips": 8,
+   "verdicts": {
+    "exact": 7,
+    "false_correction": 1
+   },
+   "audible_words": 58,
+   "word_errors": 7,
+   "wer_vs_audible": 0.121,
+   "mac_cli_rtf_median": 0.064
+  },
+  "original · mishari · original": {
+   "clips": 9,
+   "verdicts": {
+    "exact": 8,
+    "false_correction": 1
+   },
+   "audible_words": 62,
+   "word_errors": 6,
+   "wer_vs_audible": 0.097,
+   "mac_cli_rtf_median": 0.06
+  },
+  "repetition · husary · synthetic": {
+   "clips": 8,
+   "verdicts": {
+    "silently_repaired": 2,
+    "extra_word_inexact": 3,
+    "detected": 3
+   },
+   "audible_words": 47,
+   "word_errors": 5,
+   "wer_vs_audible": 0.106,
+   "mac_cli_rtf_median": 0.057
+  },
+  "repetition · mishari · synthetic": {
+   "clips": 8,
+   "verdicts": {
+    "detected": 7,
+    "silently_repaired": 1
+   },
+   "audible_words": 47,
+   "word_errors": 1,
+   "wer_vs_audible": 0.021,
+   "mac_cli_rtf_median": 0.053
+  },
+  "silence · none · synthetic": {
+   "clips": 4,
+   "verdicts": {
+    "hallucinated": 4
+   },
+   "audible_words": 0,
+   "word_errors": 4,
+   "wer_vs_audible": 4.0,
+   "mac_cli_rtf_median": 0.061
+  },
+  "unfinished · husary · synthetic": {
+   "clips": 6,
+   "verdicts": {
+    "stopped_correctly": 6
+   },
+   "audible_words": 12,
+   "word_errors": 2,
+   "wer_vs_audible": 0.167,
+   "mac_cli_rtf_median": 0.211
+  },
+  "unfinished · mishari · synthetic": {
+   "clips": 6,
+   "verdicts": {
+    "stopped_correctly": 6
+   },
+   "audible_words": 12,
+   "word_errors": 1,
+   "wer_vs_audible": 0.083,
+   "mac_cli_rtf_median": 0.204
+  }
+ }
+}

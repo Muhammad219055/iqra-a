@@ -1,0 +1,2062 @@
+{
+ "clips": [
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    5900
+   ],
+   "id": "mishari_a1_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 1,
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a1_original.wav",
+   "seconds": 5.9,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    5900
+   ],
+   "id": "mishari_a1_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     580,
+     1409
+    ]
+   },
+   "audible_words": [
+    "بسم",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a1_omit_w2.wav",
+   "seconds": 5.061,
+   "boundary_energy_ratios": [
+    0.756,
+    0.531
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    5900
+   ],
+   "id": "mishari_a1_omit_w3",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     1409,
+     2502
+    ]
+   },
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a1_omit_w3.wav",
+   "seconds": 4.797,
+   "boundary_energy_ratios": [
+    0.531,
+    0.765
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    5900
+   ],
+   "id": "mishari_a1_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "repeated_words": [
+     "الله"
+    ],
+    "repeated_interval_ms": [
+     580,
+     1409
+    ]
+   },
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a1_repeat_w2.wav",
+   "seconds": 6.719,
+   "boundary_energy_ratios": [
+    0.756,
+    0.531
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    5900
+   ],
+   "id": "mishari_a1_stop_w2",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "stopped_after_word": 2,
+    "cut_ms": 1409
+   },
+   "audible_words": [
+    "بسم",
+    "الله"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a1_stop_w2.wav",
+   "seconds": 1.409,
+   "boundary_energy_ratios": [
+    0.531
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    5965,
+    11610
+   ],
+   "id": "mishari_a2_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 2,
+   "audible_words": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a2_original.wav",
+   "seconds": 5.645,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    5965,
+    11610
+   ],
+   "id": "mishari_a2_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     7025,
+     7885
+    ]
+   },
+   "audible_words": [
+    "الحمد",
+    "رب",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a2_omit_w2.wav",
+   "seconds": 4.775,
+   "boundary_energy_ratios": [
+    1.085,
+    0.818
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    5965,
+    11610
+   ],
+   "id": "mishari_a2_omit_w3",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     7885,
+     8515
+    ]
+   },
+   "audible_words": [
+    "الحمد",
+    "لله",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a2_omit_w3.wav",
+   "seconds": 5.005,
+   "boundary_energy_ratios": [
+    0.818,
+    0.746
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    5965,
+    11610
+   ],
+   "id": "mishari_a2_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "repeated_words": [
+     "لله"
+    ],
+    "repeated_interval_ms": [
+     7025,
+     7885
+    ]
+   },
+   "audible_words": [
+    "الحمد",
+    "لله",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a2_repeat_w2.wav",
+   "seconds": 6.495,
+   "boundary_energy_ratios": [
+    1.085,
+    0.818
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    5965,
+    11610
+   ],
+   "id": "mishari_a2_stop_w2",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "stopped_after_word": 2,
+    "cut_ms": 7885
+   },
+   "audible_words": [
+    "الحمد",
+    "لله"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a2_stop_w2.wav",
+   "seconds": 1.92,
+   "boundary_energy_ratios": [
+    0.818
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    11555,
+    16240
+   ],
+   "id": "mishari_a3_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 3,
+   "audible_words": [
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a3_original.wav",
+   "seconds": 4.685,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    11555,
+    16240
+   ],
+   "id": "mishari_a3_repeat_w1",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 3,
+   "edit": {
+    "repeated_words": [
+     "الرحمن"
+    ],
+    "repeated_interval_ms": [
+     11615,
+     12855
+    ]
+   },
+   "audible_words": [
+    "الرحمن",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a3_repeat_w1.wav",
+   "seconds": 5.915,
+   "boundary_energy_ratios": [
+    0.032,
+    0.709
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    16185,
+    20885
+   ],
+   "id": "mishari_a4_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 4,
+   "audible_words": [
+    "مالك",
+    "يوم",
+    "الدين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a4_original.wav",
+   "seconds": 4.7,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    16185,
+    20885
+   ],
+   "id": "mishari_a4_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 4,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     17065,
+     17665
+    ]
+   },
+   "audible_words": [
+    "مالك",
+    "الدين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a4_omit_w2.wav",
+   "seconds": 4.09,
+   "boundary_energy_ratios": [
+    1.054,
+    0.826
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    16185,
+    20885
+   ],
+   "id": "mishari_a4_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 4,
+   "edit": {
+    "repeated_words": [
+     "يوم"
+    ],
+    "repeated_interval_ms": [
+     17065,
+     17665
+    ]
+   },
+   "audible_words": [
+    "مالك",
+    "يوم",
+    "يوم",
+    "الدين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a4_repeat_w2.wav",
+   "seconds": 5.29,
+   "boundary_energy_ratios": [
+    1.054,
+    0.826
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    16185,
+    20885
+   ],
+   "id": "mishari_a4_stop_w1",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 4,
+   "edit": {
+    "stopped_after_word": 1,
+    "cut_ms": 17065
+   },
+   "audible_words": [
+    "مالك"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a4_stop_w1.wav",
+   "seconds": 0.88,
+   "boundary_energy_ratios": [
+    1.054
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    20830,
+    27580
+   ],
+   "id": "mishari_a5_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 5,
+   "audible_words": [
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a5_original.wav",
+   "seconds": 6.75,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    20830,
+    27580
+   ],
+   "id": "mishari_a5_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     21875,
+     22645
+    ]
+   },
+   "audible_words": [
+    "اياك",
+    "واياك",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a5_omit_w2.wav",
+   "seconds": 5.97,
+   "boundary_energy_ratios": [
+    0.908,
+    0.829
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    20830,
+    27580
+   ],
+   "id": "mishari_a5_omit_w3",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     22645,
+     23765
+    ]
+   },
+   "audible_words": [
+    "اياك",
+    "نعبد",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a5_omit_w3.wav",
+   "seconds": 5.62,
+   "boundary_energy_ratios": [
+    0.829,
+    0.781
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    20830,
+    27580
+   ],
+   "id": "mishari_a5_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "repeated_words": [
+     "نعبد"
+    ],
+    "repeated_interval_ms": [
+     21875,
+     22645
+    ]
+   },
+   "audible_words": [
+    "اياك",
+    "نعبد",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a5_repeat_w2.wav",
+   "seconds": 7.51,
+   "boundary_energy_ratios": [
+    0.908,
+    0.829
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    20830,
+    27580
+   ],
+   "id": "mishari_a5_stop_w2",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "stopped_after_word": 2,
+    "cut_ms": 22645
+   },
+   "audible_words": [
+    "اياك",
+    "نعبد"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a5_stop_w2.wav",
+   "seconds": 1.815,
+   "boundary_energy_ratios": [
+    0.829
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    27525,
+    33170
+   ],
+   "id": "mishari_a6_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 6,
+   "audible_words": [
+    "اهدنا",
+    "الصراط",
+    "المستقيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a6_original.wav",
+   "seconds": 5.645,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    27525,
+    33170
+   ],
+   "id": "mishari_a6_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 6,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     28325,
+     29225
+    ]
+   },
+   "audible_words": [
+    "اهدنا",
+    "المستقيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a6_omit_w2.wav",
+   "seconds": 4.735,
+   "boundary_energy_ratios": [
+    1.116,
+    1.291
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    27525,
+    33170
+   ],
+   "id": "mishari_a6_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 6,
+   "edit": {
+    "repeated_words": [
+     "الصراط"
+    ],
+    "repeated_interval_ms": [
+     28325,
+     29225
+    ]
+   },
+   "audible_words": [
+    "اهدنا",
+    "الصراط",
+    "الصراط",
+    "المستقيم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a6_repeat_w2.wav",
+   "seconds": 6.535,
+   "boundary_energy_ratios": [
+    1.116,
+    1.291
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    27525,
+    33170
+   ],
+   "id": "mishari_a6_stop_w1",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 6,
+   "edit": {
+    "stopped_after_word": 1,
+    "cut_ms": 28325
+   },
+   "audible_words": [
+    "اهدنا"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a6_stop_w1.wav",
+   "seconds": 0.8,
+   "boundary_energy_ratios": [
+    1.116
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    33125,
+    46420
+   ],
+   "id": "mishari_a7_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 7,
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a7_original.wav",
+   "seconds": 13.295,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    33125,
+    46420
+   ],
+   "id": "mishari_a7_omit_w5",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "word_index": 5,
+    "removed_interval_ms": [
+     36805,
+     37395
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a7_omit_w5.wav",
+   "seconds": 12.695,
+   "boundary_energy_ratios": [
+    0.729,
+    0.981
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    33125,
+    46420
+   ],
+   "id": "mishari_a7_omit_w8",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "word_index": 8,
+    "removed_interval_ms": [
+     39565,
+     39855
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a7_omit_w8.wav",
+   "seconds": 12.995,
+   "boundary_energy_ratios": [
+    0.814,
+    0.834
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    33125,
+    46420
+   ],
+   "id": "mishari_a7_repeat_w5",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "repeated_words": [
+     "غير"
+    ],
+    "repeated_interval_ms": [
+     36805,
+     37395
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a7_repeat_w5.wav",
+   "seconds": 13.875,
+   "boundary_energy_ratios": [
+    0.729,
+    0.981
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    33125,
+    46420
+   ],
+   "id": "mishari_a7_stop_w4",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "stopped_after_word": 4,
+    "cut_ms": 36805
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a7_stop_w4.wav",
+   "seconds": 3.68,
+   "boundary_energy_ratios": [
+    0.729
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "source_interval_ms": [
+    33125,
+    46420
+   ],
+   "id": "mishari_a7_repeat_w2-3",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "repeated_words": [
+     "الذين",
+     "انعمت"
+    ],
+    "repeated_interval_ms": [
+     33935,
+     35875
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_a7_repeat_w2-3.wav",
+   "seconds": 15.225,
+   "boundary_energy_ratios": [
+    1.412,
+    1.165
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "mishari",
+   "source": "data/audio_cache/mishari/001_16k.wav",
+   "id": "mishari_full_surah",
+   "category": "original",
+   "synthetic": false,
+   "ayah": null,
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم",
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين",
+    "الرحمن",
+    "الرحيم",
+    "مالك",
+    "يوم",
+    "الدين",
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين",
+    "اهدنا",
+    "الصراط",
+    "المستقيم",
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/mishari_full_surah.wav",
+   "seconds": 46.447,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    4870
+   ],
+   "id": "husary_a1_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 1,
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a1_original.wav",
+   "seconds": 4.87,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    4870
+   ],
+   "id": "husary_a1_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     540,
+     1350
+    ]
+   },
+   "audible_words": [
+    "بسم",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a1_omit_w2.wav",
+   "seconds": 4.05,
+   "boundary_energy_ratios": [
+    0.168,
+    0.339
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    4870
+   ],
+   "id": "husary_a1_omit_w3",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     1350,
+     2356
+    ]
+   },
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a1_omit_w3.wav",
+   "seconds": 3.854,
+   "boundary_energy_ratios": [
+    0.339,
+    0.44
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    4870
+   ],
+   "id": "husary_a1_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "repeated_words": [
+     "الله"
+    ],
+    "repeated_interval_ms": [
+     540,
+     1350
+    ]
+   },
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a1_repeat_w2.wav",
+   "seconds": 5.67,
+   "boundary_energy_ratios": [
+    0.168,
+    0.339
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    0,
+    4870
+   ],
+   "id": "husary_a1_stop_w2",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 1,
+   "edit": {
+    "stopped_after_word": 2,
+    "cut_ms": 1350
+   },
+   "audible_words": [
+    "بسم",
+    "الله"
+   ],
+   "path": "on-device/evaluation/clips/husary_a1_stop_w2.wav",
+   "seconds": 1.35,
+   "boundary_energy_ratios": [
+    0.339
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    5160,
+    10590
+   ],
+   "id": "husary_a2_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 2,
+   "audible_words": [
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a2_original.wav",
+   "seconds": 5.43,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    5160,
+    10590
+   ],
+   "id": "husary_a2_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     6690,
+     7570
+    ]
+   },
+   "audible_words": [
+    "الحمد",
+    "رب",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a2_omit_w2.wav",
+   "seconds": 4.54,
+   "boundary_energy_ratios": [
+    0.278,
+    0.561
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    5160,
+    10590
+   ],
+   "id": "husary_a2_omit_w3",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     7570,
+     8130
+    ]
+   },
+   "audible_words": [
+    "الحمد",
+    "لله",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a2_omit_w3.wav",
+   "seconds": 4.86,
+   "boundary_energy_ratios": [
+    0.561,
+    0.299
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    5160,
+    10590
+   ],
+   "id": "husary_a2_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "repeated_words": [
+     "لله"
+    ],
+    "repeated_interval_ms": [
+     6690,
+     7570
+    ]
+   },
+   "audible_words": [
+    "الحمد",
+    "لله",
+    "لله",
+    "رب",
+    "العالمين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a2_repeat_w2.wav",
+   "seconds": 6.3,
+   "boundary_energy_ratios": [
+    0.278,
+    0.561
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    5160,
+    10590
+   ],
+   "id": "husary_a2_stop_w2",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 2,
+   "edit": {
+    "stopped_after_word": 2,
+    "cut_ms": 7570
+   },
+   "audible_words": [
+    "الحمد",
+    "لله"
+   ],
+   "path": "on-device/evaluation/clips/husary_a2_stop_w2.wav",
+   "seconds": 2.41,
+   "boundary_energy_ratios": [
+    0.561
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    11510,
+    15430
+   ],
+   "id": "husary_a3_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 3,
+   "audible_words": [
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a3_original.wav",
+   "seconds": 3.92,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    11510,
+    15430
+   ],
+   "id": "husary_a3_repeat_w1",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 3,
+   "edit": {
+    "repeated_words": [
+     "الرحمن"
+    ],
+    "repeated_interval_ms": [
+     11570,
+     13040
+    ]
+   },
+   "audible_words": [
+    "الرحمن",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a3_repeat_w1.wav",
+   "seconds": 5.38,
+   "boundary_energy_ratios": [
+    0.003,
+    0.419
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    16080,
+    19880
+   ],
+   "id": "husary_a4_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 4,
+   "audible_words": [
+    "مالك",
+    "يوم",
+    "الدين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a4_original.wav",
+   "seconds": 3.8,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    16080,
+    19880
+   ],
+   "id": "husary_a4_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 4,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     17190,
+     17840
+    ]
+   },
+   "audible_words": [
+    "مالك",
+    "الدين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a4_omit_w2.wav",
+   "seconds": 3.14,
+   "boundary_energy_ratios": [
+    0.373,
+    0.377
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    16080,
+    19880
+   ],
+   "id": "husary_a4_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 4,
+   "edit": {
+    "repeated_words": [
+     "يوم"
+    ],
+    "repeated_interval_ms": [
+     17190,
+     17840
+    ]
+   },
+   "audible_words": [
+    "مالك",
+    "يوم",
+    "يوم",
+    "الدين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a4_repeat_w2.wav",
+   "seconds": 4.44,
+   "boundary_energy_ratios": [
+    0.373,
+    0.377
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    16080,
+    19880
+   ],
+   "id": "husary_a4_stop_w1",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 4,
+   "edit": {
+    "stopped_after_word": 1,
+    "cut_ms": 17190
+   },
+   "audible_words": [
+    "مالك"
+   ],
+   "path": "on-device/evaluation/clips/husary_a4_stop_w1.wav",
+   "seconds": 1.11,
+   "boundary_energy_ratios": [
+    0.373
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    20780,
+    26840
+   ],
+   "id": "husary_a5_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 5,
+   "audible_words": [
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a5_original.wav",
+   "seconds": 6.06,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    20780,
+    26840
+   ],
+   "id": "husary_a5_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     22210,
+     23120
+    ]
+   },
+   "audible_words": [
+    "اياك",
+    "واياك",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a5_omit_w2.wav",
+   "seconds": 5.14,
+   "boundary_energy_ratios": [
+    0.556,
+    1.094
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    20780,
+    26840
+   ],
+   "id": "husary_a5_omit_w3",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     23120,
+     24390
+    ]
+   },
+   "audible_words": [
+    "اياك",
+    "نعبد",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a5_omit_w3.wav",
+   "seconds": 4.78,
+   "boundary_energy_ratios": [
+    1.094,
+    0.573
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    20780,
+    26840
+   ],
+   "id": "husary_a5_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "repeated_words": [
+     "نعبد"
+    ],
+    "repeated_interval_ms": [
+     22210,
+     23120
+    ]
+   },
+   "audible_words": [
+    "اياك",
+    "نعبد",
+    "نعبد",
+    "واياك",
+    "نستعين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a5_repeat_w2.wav",
+   "seconds": 6.96,
+   "boundary_energy_ratios": [
+    0.556,
+    1.094
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    20780,
+    26840
+   ],
+   "id": "husary_a5_stop_w2",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 5,
+   "edit": {
+    "stopped_after_word": 2,
+    "cut_ms": 23120
+   },
+   "audible_words": [
+    "اياك",
+    "نعبد"
+   ],
+   "path": "on-device/evaluation/clips/husary_a5_stop_w2.wav",
+   "seconds": 2.34,
+   "boundary_energy_ratios": [
+    1.094
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    27700,
+    32570
+   ],
+   "id": "husary_a6_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 6,
+   "audible_words": [
+    "اهدنا",
+    "الصراط",
+    "المستقيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a6_original.wav",
+   "seconds": 4.87,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    27700,
+    32570
+   ],
+   "id": "husary_a6_omit_w2",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 6,
+   "edit": {
+    "word_index": 2,
+    "removed_interval_ms": [
+     28660,
+     29670
+    ]
+   },
+   "audible_words": [
+    "اهدنا",
+    "المستقيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a6_omit_w2.wav",
+   "seconds": 3.85,
+   "boundary_energy_ratios": [
+    1.0,
+    1.407
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    27700,
+    32570
+   ],
+   "id": "husary_a6_repeat_w2",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 6,
+   "edit": {
+    "repeated_words": [
+     "الصراط"
+    ],
+    "repeated_interval_ms": [
+     28660,
+     29670
+    ]
+   },
+   "audible_words": [
+    "اهدنا",
+    "الصراط",
+    "الصراط",
+    "المستقيم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a6_repeat_w2.wav",
+   "seconds": 5.87,
+   "boundary_energy_ratios": [
+    1.0,
+    1.407
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    27700,
+    32570
+   ],
+   "id": "husary_a6_stop_w1",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 6,
+   "edit": {
+    "stopped_after_word": 1,
+    "cut_ms": 28660
+   },
+   "audible_words": [
+    "اهدنا"
+   ],
+   "path": "on-device/evaluation/clips/husary_a6_stop_w1.wav",
+   "seconds": 0.96,
+   "boundary_energy_ratios": [
+    1.0
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    33130,
+    47099
+   ],
+   "id": "husary_a7_original",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 7,
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a7_original.wav",
+   "seconds": 13.969,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    33130,
+    47099
+   ],
+   "id": "husary_a7_omit_w5",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "word_index": 5,
+    "removed_interval_ms": [
+     37440,
+     38170
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a7_omit_w5.wav",
+   "seconds": 13.229,
+   "boundary_energy_ratios": [
+    0.64,
+    0.328
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    33130,
+    47099
+   ],
+   "id": "husary_a7_omit_w8",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "word_index": 8,
+    "removed_interval_ms": [
+     40650,
+     40970
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a7_omit_w8.wav",
+   "seconds": 13.639,
+   "boundary_energy_ratios": [
+    0.763,
+    0.396
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    33130,
+    47099
+   ],
+   "id": "husary_a7_repeat_w5",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "repeated_words": [
+     "غير"
+    ],
+    "repeated_interval_ms": [
+     37440,
+     38170
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a7_repeat_w5.wav",
+   "seconds": 14.689,
+   "boundary_energy_ratios": [
+    0.64,
+    0.328
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    33130,
+    47099
+   ],
+   "id": "husary_a7_stop_w4",
+   "category": "unfinished",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "stopped_after_word": 4,
+    "cut_ms": 37440
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم"
+   ],
+   "path": "on-device/evaluation/clips/husary_a7_stop_w4.wav",
+   "seconds": 4.31,
+   "boundary_energy_ratios": [
+    0.64
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "source_interval_ms": [
+    33130,
+    47099
+   ],
+   "id": "husary_a7_repeat_w2-3",
+   "category": "repetition",
+   "synthetic": true,
+   "ayah": 7,
+   "edit": {
+    "repeated_words": [
+     "الذين",
+     "انعمت"
+    ],
+    "repeated_interval_ms": [
+     34400,
+     36380
+    ]
+   },
+   "audible_words": [
+    "صراط",
+    "الذين",
+    "انعمت",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/husary_a7_repeat_w2-3.wav",
+   "seconds": 15.939,
+   "boundary_energy_ratios": [
+    1.266,
+    0.939
+   ],
+   "boundary_check": "unverified"
+  },
+  {
+   "speaker": "husary",
+   "source": "data/audio_cache/husary/001_16k.wav",
+   "id": "husary_full_surah",
+   "category": "original",
+   "synthetic": false,
+   "ayah": null,
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم",
+    "الحمد",
+    "لله",
+    "رب",
+    "العالمين",
+    "الرحمن",
+    "الرحيم",
+    "مالك",
+    "يوم",
+    "الدين",
+    "اياك",
+    "نعبد",
+    "واياك",
+    "نستعين",
+    "اهدنا",
+    "الصراط",
+    "المستقيم",
+    "صراط",
+    "الذين",
+    "انعمت",
+    "عليهم",
+    "غير",
+    "المغضوب",
+    "عليهم",
+    "ولا",
+    "الضالين"
+   ],
+   "path": "on-device/evaluation/clips/husary_full_surah.wav",
+   "seconds": 48.146,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "id": "fixture_ayah_1_clean",
+   "speaker": "mishari",
+   "category": "original",
+   "synthetic": false,
+   "ayah": 1,
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحمن",
+    "الرحيم"
+   ],
+   "path": "tests/audio/ayah_1_clean.wav",
+   "source_sha256": "d69536ed3d4f0ed42b7602381d7f2ae49eedeb442de35ceebcb10805c553c2ac",
+   "seconds": 6.09,
+   "boundary_check": "existing fixture"
+  },
+  {
+   "id": "fixture_ayah_1_skipped_word3",
+   "speaker": "mishari",
+   "category": "omission",
+   "synthetic": true,
+   "ayah": 1,
+   "audible_words": [
+    "بسم",
+    "الله",
+    "الرحيم"
+   ],
+   "edit": {
+    "word_index": 3,
+    "removed_interval_ms": [
+     1409,
+     2502
+    ]
+   },
+   "path": "tests/audio/ayah_1_skipped_word3.wav",
+   "source_sha256": "bae9da6c70d787ccc356b770aa97af38fce74705a110f4ec4dc7fd266174931b",
+   "seconds": 4.997,
+   "boundary_check": "existing fixture"
+  },
+  {
+   "id": "digital_silence_2s",
+   "speaker": "none",
+   "category": "silence",
+   "synthetic": true,
+   "ayah": null,
+   "audible_words": [],
+   "native_rms_guard_would_skip": true,
+   "path": "on-device/evaluation/clips/digital_silence_2s.wav",
+   "seconds": 2.0,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "id": "digital_silence_8s",
+   "speaker": "none",
+   "category": "silence",
+   "synthetic": true,
+   "ayah": null,
+   "audible_words": [],
+   "native_rms_guard_would_skip": true,
+   "path": "on-device/evaluation/clips/digital_silence_8s.wav",
+   "seconds": 8.0,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "id": "noise_minus50dbfs_5s",
+   "speaker": "none",
+   "category": "silence",
+   "synthetic": true,
+   "ayah": null,
+   "audible_words": [],
+   "native_rms_guard_would_skip": false,
+   "path": "on-device/evaluation/clips/noise_minus50dbfs_5s.wav",
+   "seconds": 5.0,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  },
+  {
+   "id": "noise_minus40dbfs_5s",
+   "speaker": "none",
+   "category": "silence",
+   "synthetic": true,
+   "ayah": null,
+   "audible_words": [],
+   "native_rms_guard_would_skip": false,
+   "path": "on-device/evaluation/clips/noise_minus40dbfs_5s.wav",
+   "seconds": 5.0,
+   "boundary_energy_ratios": [],
+   "boundary_check": "n/a"
+  }
+ ],
+ "timing_validation": {
+  "mishari": {
+   "issues": [
+    "1:3: dropped malformed row [1]",
+    "1:3: dropped malformed row [2]",
+    "1:3: dropped malformed row [1]"
+   ],
+   "audio_seconds": 46.447,
+   "last_word_end_seconds": 46.36,
+   "ayah_end_energy_ratios": [
+    0.15,
+    0.099,
+    0.064,
+    0.066,
+    0.096,
+    0.059
+   ]
+  },
+  "husary": {
+   "issues": [],
+   "audio_seconds": 48.146,
+   "last_word_end_seconds": 47.039,
+   "ayah_end_energy_ratios": [
+    0.02,
+    0.113,
+    0.028,
+    0.073,
+    0.096,
+    0.03
+   ]
+  }
+ },
+ "sources": {
+  "mishari": {
+   "audio": "data/audio_cache/mishari/001_16k.wav",
+   "audio_sha256": "16e41805bc9ab3e2a4ec9f144dfbce5f502df50e797db5ee0848aa48200a8782",
+   "timing": "ios/QuranTutor/Resources/surah_1_mishari.json",
+   "timing_sha256": "6a17df4a8b8d114e4f721e8595f4f7dd4236b5ad50b5b623233b80a1f91b982c"
+  },
+  "husary": {
+   "audio": "data/audio_cache/husary/001_16k.wav",
+   "audio_sha256": "4171df4cd6be271faf1b94323734204242a201fbb0d7c341a3e79d0a00feff2c",
+   "timing": "data/timings/surah_1_husary.json",
+   "timing_sha256": "6c9420b1d9a295ad74e34fd3cc9ef338555d555aa7f985c461762df1f159b864"
+  }
+ }
+}

@@ -3,19 +3,15 @@
     "name": "Quran Tutor",
     "slug": "quran-tutor",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
-    "splash": {
-      "resizeMode": "contain",
-      "backgroundColor": "#0d1117"
-    },
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.muhammad.qurantutor",
+      "bundleIdentifier": "com.mki15.qurantutor",
       "infoPlist": {
         "NSMicrophoneUsageDescription": "Quran Tutor requires microphone access to listen to your recitation and provide live teacher feedback."
-      }
+      },
+      "appleTeamId": "GUY9JCSF5U"
     },
     "android": {
       "package": "com.muhammad.qurantutor",
@@ -25,7 +21,20 @@
     },
     "plugins": [
       [
-        "expo-av",
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFF9EF",
+          "dark": {
+            "image": "./assets/splash-dark.png",
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-audio",
         {
           "microphonePermission": "Quran Tutor requires microphone access to listen to your recitation and provide live teacher feedback."
         }

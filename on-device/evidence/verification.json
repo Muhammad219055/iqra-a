@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21",
+  "runtime": "iOS 27.0 simulator, iPhone 18 Pro",
+  "sdk": "iOS 27.1 / Xcode 27.1",
+  "backend": "CPU + Accelerate, up to 4 threads",
+  "model": {
+    "model": "tarteel-ai/whisper-base-ar-quran",
+    "revision": "5c3c53fdf9272c4f6ee0bee09a1e5a4a615ee25c",
+    "format": "ggml-f16",
+    "bytes": 147951465,
+    "sha256": "aaebca10e2a65a6dda073a6b3ac59900f91887628acf872c565a0198ee850ead",
+    "engine_commit": "d1be6fde11ac6e0407606b4e42fe72d34add8037"
+  },
+  "transcriptions": [
+    {
+      "fixture": "ayah_1_clean",
+      "seconds": 1.5938140153884888,
+      "text": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+      "audio_seconds": 6.09,
+      "real_time_factor": 0.262
+    },
+    {
+      "fixture": "ayah_1_skipped_word3",
+      "seconds": 1.7203480005264282,
+      "text": "بِسْمِ اللَّهِ الرَّحِيمِ",
+      "audio_seconds": 4.997,
+      "real_time_factor": 0.344
+    }
+  ],
+  "checks": {
+    "exact_normalized_transcripts": "passed",
+    "omitted_word_preserved": "passed on this fixture",
+    "silence": "passed",
+    "invalid_pcm": "passed",
+    "arabic_normalization": "passed",
+    "unsigned_physical_iphone_build": "passed",
+    "physical_phone_inference": "not tested",
+    "live_microphone": "not implemented",
+    "airplane_mode": "not tested",
+    "cancellation": "not tested",
+    "reader_integration": "not implemented"
+  }
+}
